@@ -6,8 +6,9 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <title>올더뮤</title>
-    <!-- 플러그인, 웹글꼴 -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- 플러그인, 웹글꼴, 파비콘 -->
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
     <!--swiper 필수 css cdn 연결-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -24,7 +25,7 @@
 </head>
 <body>
     <div id="wrap">
-        <div class="top_bnr">
+        <div class="top_bnr"> <!-- bg -->
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide slide1">
@@ -41,8 +42,9 @@
         </div>
         <header>
             <div class="h_left">
+                <button type="button" class="menu_btn"><img src="" alt="메뉴 열기"></button><!-- 모바일 환경에서 보여지는 햄버거메뉴 아이콘 -->
                 <h1><a href="#" class="logo"><img src="" alt="올더뮤"></a></h1>
-                <nav>
+                <nav calss="gnb_pc"><!-- pc, tablet 용 -->
                     <a href="#">전체상품</a>
                     <a href="#">베스트</a>
                     <a href="#">이벤트</a>
@@ -62,6 +64,31 @@
                 </div>
             </div>
         </header>
+        <div class="menu_open"><!-- 햄버거메뉴 클릭하면 보이는 영역 -->
+            <div class="menu_top">
+                    <div class="login">
+                        <a href="#">로그인 / 회원가입<img src="" alt=""></a>
+                        <p>지금 로그인/회원가입하고 풍성한 헤택을 받아보세요!</p>
+                    </div>
+                <button type="button" class="close_btn"><img src="" alt="메뉴 닫기"></button>
+            </div>
+            <nav class="gnb_mobile"><!-- mobile 용 -->
+                <a href="#">전체상품</a>
+                <a href="#">베스트</a>
+                <a href="#">이벤트</a>
+                <a href="#">정기배송</a>
+                <a href="#">멤버십</a>
+                <a href="#">브랜드</a>
+            </nav>
+            <div class="lnb">
+                <a href="#">비회원 주문조회</a>
+                <a href="#">고객센터</a>
+                <a href="#">공지사항</a>
+                <a href="#">도움말</a>
+                <a href="#">FAQ</a>
+            </div>
+        </div>
+        <div class="overlay"></div><!-- 모바일 환경에서 메뉴를 열었을때 뒷 배경이 어둡게 보이도록 함(클릭하면 메뉴 닫힘) -->
         <main>
             <div class="fab_wrap">
                 <a href="#" class="top"><img src="" alt="위로 올라가기"></a>
@@ -236,156 +263,162 @@
                         <a href="#" class="v_line">자신있는 V라인</a>
                         <a href="#" class="mode">빛나는 분위기 관리</a>
                     </div>
-                    <ul class="recommendation_list once_day_continer">
-                        <li class="rec_product rec1">
-                            <div class="rec_photo_box">
-                                <a href="#" class="photo"><img src="" alt=""></a>
-                                <div class="like_cart">
-                                    <a href="#" class="like"><img src="" alt="찜하기"></a>
-                                    <a href="#" class="cart"><img src="" alt="장바구니에 담기"></a>
+                    <div class="swiper once_day_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide1">
+                                <div class="rec_photo_box">
+                                    <a href="#" class="photo"><img src="" alt=""></a>
+                                    <div class="like_cart">
+                                        <a href="#" class="like"><img src="" alt="찜하기"></a>
+                                        <a href="#" class="cart"><img src="" alt="장바구니에 담기"></a>
+                                    </div>
+                                </div>
+                                <div class="rec_txt_box">
+                                    <a href="#">
+                                        <h2>뮤신 바운스</h2>
+                                        <p class="price"><span class=" discount">17%</span><em>35,900원</em><del>43,000원</del></p>
+                                    </a>
+                                    <a href="#" class="review"><img src="" alt=""><span>4.7</span><span>리뷰 2190</span></a>
                                 </div>
                             </div>
-                            <div class="rec_txt_box">
-                                <a href="#">
-                                    <h2>뮤신 바운스</h2>
-                                    <p class="price"><span class=" discount">17%</span><em>35,900원</em><del>43,000원</del></p>
-                                </a>
-                                <a href="#" class="review"><img src="" alt=""><span>4.7</span><span>리뷰 2190</span></a>
-                            </div>
-                        </li>
-                        <li class="rec_product rec2">
-                            <div class="rec_photo_box">
-                                <a href="#" class="photo"><img src="" alt=""></a>
-                                <div class="like_cart">
-                                    <a href="#" class="like"><img src="" alt="찜하기"></a>
-                                    <a href="#" class="cart"><img src="" alt="장바구니에 담기"></a>
+                            <div class="swiper-slide slide2">
+                                <div class="rec_photo_box">
+                                    <a href="#" class="photo"><img src="" alt=""></a>
+                                    <div class="like_cart">
+                                        <a href="#" class="like"><img src="" alt="찜하기"></a>
+                                        <a href="#" class="cart"><img src="" alt="장바구니에 담기"></a>
+                                    </div>
+                                </div>
+                                <div class="rec_txt_box">
+                                    <a href="#">
+                                        <h2>[라스트] V컷 뮤신구미 ~41%</h2>
+                                        <p class="price"><span class=" discount">31%</span><em>19,990원</em><del>20,000원</del></p>
+                                    </a>
+                                    <a href="#" class="review"><img src="" alt=""><span>4.7</span><span>리뷰 945</span></a>
                                 </div>
                             </div>
-                            <div class="rec_txt_box">
-                                <a href="#">
-                                    <h2>[라스트] V컷 뮤신구미 ~41%</h2>
-                                    <p class="price"><span class=" discount">31%</span><em>19,990원</em><del>20,000원</del></p>
-                                </a>
-                                <a href="#" class="review"><img src="" alt=""><span>4.7</span><span>리뷰 945</span></a>
-                            </div>
-                        </li>
-                        <li class="rec_product rec3">
-                            <div class="rec_photo_box">
-                                <a href="#" class="photo"><img src="" alt=""></a>
-                                <div class="like_cart">
-                                    <a href="#" class="like"><img src="" alt="찜하기"></a>
-                                    <a href="#" class="cart"><img src="" alt="장바구니에 담기"></a>
+                            <div class="swiper-slide slide3">
+                                <div class="rec_photo_box">
+                                    <a href="#" class="photo"><img src="" alt=""></a>
+                                    <div class="like_cart">
+                                        <a href="#" class="like"><img src="" alt="찜하기"></a>
+                                        <a href="#" class="cart"><img src="" alt="장바구니에 담기"></a>
+                                    </div>
+                                </div>
+                                <div class="rec_txt_box">
+                                    <a href="#">
+                                        <h2>뮤신 아쿠아</h2>
+                                        <p class="price"><span class=" discount">20%</span><em>36,990원</em><del>46,000원</del></p>
+                                    </a>
+                                    <a href="#" class="review"><img src="" alt=""><span>4.7</span><span>리뷰 764</span></a>
                                 </div>
                             </div>
-                            <div class="rec_txt_box">
-                                <a href="#">
-                                    <h2>뮤신 아쿠아</h2>
-                                    <p class="price"><span class=" discount">20%</span><em>36,990원</em><del>46,000원</del></p>
-                                </a>
-                                <a href="#" class="review"><img src="" alt=""><span>4.7</span><span>리뷰 764</span></a>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="recommendation_list v_line_continer">
-                        <li class="rec_product rec1">
-                            <div class="rec_photo_box">
-                                <a href="#" class="photo"><img src="" alt=""></a>
-                                <div class="like_cart">
-                                    <a href="#" class="like"><img src="" alt="찜하기"></a>
-                                    <a href="#" class="cart"><img src="" alt="장바구니에 담기"></a>
+                        </div>
+                    </div>
+                    <div class="swiper v_line_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide1">
+                                <div class="rec_photo_box">
+                                    <a href="#" class="photo"><img src="" alt=""></a>
+                                    <div class="like_cart">
+                                        <a href="#" class="like"><img src="" alt="찜하기"></a>
+                                        <a href="#" class="cart"><img src="" alt="장바구니에 담기"></a>
+                                    </div>
+                                </div>
+                                <div class="rec_txt_box">
+                                    <a href="#">
+                                        <h2>[뷰티페스타] 올더뮤 뮤신 더글로우</h2>
+                                        <p class="price"><span class=" discount">24%</span><em>28,900원</em><del>38,000원</del></p>
+                                    </a>
+                                    <a href="#" class="review"><img src="" alt=""><span>4.7</span><span>리뷰 46418</span></a>
                                 </div>
                             </div>
-                            <div class="rec_txt_box">
-                                <a href="#">
-                                    <h2>[뷰티페스타] 올더뮤 뮤신 더글로우</h2>
-                                    <p class="price"><span class=" discount">24%</span><em>28,900원</em><del>38,000원</del></p>
-                                </a>
-                                <a href="#" class="review"><img src="" alt=""><span>4.7</span><span>리뷰 46418</span></a>
-                            </div>
-                        </li>
-                        <li class="rec_product rec2">
-                            <div class="rec_photo_box">
-                                <a href="#" class="photo"><img src="" alt=""></a>
-                                <div class="like_cart">
-                                    <a href="#" class="like"><img src="" alt="찜하기"></a>
-                                    <a href="#" class="cart"><img src="" alt="장바구니에 담기"></a>
+                            <div class="swiper-slide slide2">
+                                <div class="rec_photo_box">
+                                    <a href="#" class="photo"><img src="" alt=""></a>
+                                    <div class="like_cart">
+                                        <a href="#" class="like"><img src="" alt="찜하기"></a>
+                                        <a href="#" class="cart"><img src="" alt="장바구니에 담기"></a>
+                                    </div>
+                                </div>
+                                <div class="rec_txt_box">
+                                    <a href="#">
+                                        <h2>[라스트] V컷 뮤신구미 ~41%</h2>
+                                        <p class="price"><span class=" discount">31%</span><em>19,990원</em><del>20,000원</del></p>
+                                    </a>
+                                    <a href="#" class="review"><img src="" alt=""><span>4.7</span><span>리뷰 945</span></a>
                                 </div>
                             </div>
-                            <div class="rec_txt_box">
-                                <a href="#">
-                                    <h2>[라스트] V컷 뮤신구미 ~41%</h2>
-                                    <p class="price"><span class=" discount">31%</span><em>19,990원</em><del>20,000원</del></p>
-                                </a>
-                                <a href="#" class="review"><img src="" alt=""><span>4.7</span><span>리뷰 945</span></a>
-                            </div>
-                        </li>
-                        <li class="rec_product rec3">
-                            <div class="rec_photo_box">
-                                <a href="#" class="photo"><img src="" alt=""></a>
-                                <div class="like_cart">
-                                    <a href="#" class="like"><img src="" alt="찜하기"></a>
-                                    <a href="#" class="cart"><img src="" alt="장바구니에 담기"></a>
+                            <div class="swiper-slide slide3">
+                                <div class="rec_photo_box">
+                                    <a href="#" class="photo"><img src="" alt=""></a>
+                                    <div class="like_cart">
+                                        <a href="#" class="like"><img src="" alt="찜하기"></a>
+                                        <a href="#" class="cart"><img src="" alt="장바구니에 담기"></a>
+                                    </div>
+                                </div>
+                                <div class="rec_txt_box">
+                                    <a href="#">
+                                        <h2>뮤신 바운스</h2>
+                                        <p class="price"><span class=" discount">17%</span><em>35,900원</em><del>43,000원</del></p>
+                                    </a>
+                                    <a href="#" class="review"><img src="" alt=""><span>4.7</span><span>리뷰 2190</span></a>
                                 </div>
                             </div>
-                            <div class="rec_txt_box">
-                                <a href="#">
-                                    <h2>뮤신 바운스</h2>
-                                    <p class="price"><span class=" discount">17%</span><em>35,900원</em><del>43,000원</del></p>
-                                </a>
-                                <a href="#" class="review"><img src="" alt=""><span>4.7</span><span>리뷰 2190</span></a>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="recommendation_list mode_continer">
-                        <li class="rec_product rec1">
-                            <div class="rec_photo_box">
-                                <a href="#" class="photo"><img src="" alt=""></a>
-                                <div class="like_cart">
-                                    <a href="#" class="like"><img src="" alt="찜하기"></a>
-                                    <a href="#" class="cart"><img src="" alt="장바구니에 담기"></a>
+                        </div>
+                    </div>
+                    <div class="swiper mode_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide1">
+                                <div class="rec_photo_box">
+                                    <a href="#" class="photo"><img src="" alt=""></a>
+                                    <div class="like_cart">
+                                        <a href="#" class="like"><img src="" alt="찜하기"></a>
+                                        <a href="#" class="cart"><img src="" alt="장바구니에 담기"></a>
+                                    </div>
+                                </div>
+                                <div class="rec_txt_box">
+                                    <a href="#">
+                                        <h2>뮤신 클리어모닝 유산균 젤리 2박스</h2>
+                                        <p class="price"><span class=" discount">3%</span><em>45,800원</em><del>47,000원</del></p>
+                                    </a>
+                                    <a href="#" class="review"><img src="" alt=""><span>4.9</span><span>리뷰 147</span></a>
                                 </div>
                             </div>
-                            <div class="rec_txt_box">
-                                <a href="#">
-                                    <h2>뮤신 클리어모닝 유산균 젤리 2박스</h2>
-                                    <p class="price"><span class=" discount">3%</span><em>45,800원</em><del>47,000원</del></p>
-                                </a>
-                                <a href="#" class="review"><img src="" alt=""><span>4.9</span><span>리뷰 147</span></a>
-                            </div>
-                        </li>
-                        <li class="rec_product rec2">
-                            <div class="rec_photo_box">
-                                <a href="#" class="photo"><img src="" alt=""></a>
-                                <div class="like_cart">
-                                    <a href="#" class="like"><img src="" alt="찜하기"></a>
-                                    <a href="#" class="cart"><img src="" alt="장바구니에 담기"></a>
+                            <div class="swiper-slide slide2">
+                                <div class="rec_photo_box">
+                                    <a href="#" class="photo"><img src="" alt=""></a>
+                                    <div class="like_cart">
+                                        <a href="#" class="like"><img src="" alt="찜하기"></a>
+                                        <a href="#" class="cart"><img src="" alt="장바구니에 담기"></a>
+                                    </div>
+                                </div>
+                                <div class="rec_txt_box">
+                                    <a href="#">
+                                        <h2>[뷰티페스타] 올더뮤 뮤신 더글로우</h2>
+                                        <p class="price"><span class=" discount">24%</span><em>28,900원</em><del>38,000원</del></p>
+                                    </a>
+                                    <a href="#" class="review"><img src="" alt=""><span>4.7</span><span>리뷰 46418</span></a>
                                 </div>
                             </div>
-                            <div class="rec_txt_box">
-                                <a href="#">
-                                    <h2>[뷰티페스타] 올더뮤 뮤신 더글로우</h2>
-                                    <p class="price"><span class=" discount">24%</span><em>28,900원</em><del>38,000원</del></p>
-                                </a>
-                                <a href="#" class="review"><img src="" alt=""><span>4.7</span><span>리뷰 46418</span></a>
-                            </div>
-                        </li>
-                        <li class="rec_product rec3">
-                            <div class="rec_photo_box">
-                                <a href="#" class="photo"><img src="" alt=""></a>
-                                <div class="like_cart">
-                                    <a href="#" class="like"><img src="" alt="찜하기"></a>
-                                    <a href="#" class="cart"><img src="" alt="장바구니에 담기"></a>
+                            <div class="swiper-slide slide3">
+                                <div class="rec_photo_box">
+                                    <a href="#" class="photo"><img src="" alt=""></a>
+                                    <div class="like_cart">
+                                        <a href="#" class="like"><img src="" alt="찜하기"></a>
+                                        <a href="#" class="cart"><img src="" alt="장바구니에 담기"></a>
+                                    </div>
+                                </div>
+                                <div class="rec_txt_box">
+                                    <a href="#">
+                                        <h2>뮤신 아쿠아</h2>
+                                        <p class="price"><span class=" discount">20%</span><em>36,990원</em><del>46,000원</del></p>
+                                    </a>
+                                    <a href="#" class="review"><img src="" alt=""><span>4.7</span><span>리뷰 764</span></a>
                                 </div>
                             </div>
-                            <div class="rec_txt_box">
-                                <a href="#">
-                                    <h2>뮤신 아쿠아</h2>
-                                    <p class="price"><span class=" discount">20%</span><em>36,990원</em><del>46,000원</del></p>
-                                </a>
-                                <a href="#" class="review"><img src="" alt=""><span>4.7</span><span>리뷰 764</span></a>
-                            </div>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="membership_bnr_wrap">
@@ -597,8 +630,7 @@
             <div class="f_right">
                 <h2>COMPANY INFO</h2>
                 <p>(주)에이지엣랩스 사업자정보<br>대표이사 : 이정석<br>사업자등록번호 : 663-87-00990 [사업자정보확인]<br>통신판매업신고 : 제2025-서울중구-615호</p>
-                <address><a href="#">주소 : 04637 13층 039호, 서울 중구 한강대로 416 서울스퀘어</a></address>
-                <address>전화번호 : 02-6369-5429</address>
+                <address>주소 : 04637 13층 039호, 서울 중구 한강대로 416 서울스퀘어<br>전화번호 : 02-6369-5429</address>
                 <p>호스팅 사업자 : (주)카페24<br>Copyright &copy; AGE At Labs Co., Ltd. All rights reserved</p>
             </div>
             <div class="f_bottom">
