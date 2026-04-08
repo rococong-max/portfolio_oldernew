@@ -16,3 +16,5 @@
         * `[div > h1 + {div>btn(prev,next)}] + swiper `
     * 가장 바깥영역 div에는 id로 주는게 좋음 (div.best_wrap -> div#best_wrap)
 * 피드백 내용 수정 완료
+### 2026-04-08
+* 모바일 환경에서 보이는 햄버거 메뉴안 gnb 내용 삭제 -> js로 pc_gnb 복제해서 사용 예정
