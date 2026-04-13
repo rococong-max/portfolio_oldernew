@@ -6,7 +6,7 @@
     padding: 0 240px;
 }
 #wrap header .h_left {display: flex; align-items: center;}
-#wrap header .h_left #menu_btn {width: 24px; margin-right: 12px;}/* 전체메뉴 펼치기(햄버거 메뉴) */
+#wrap header .h_left #menu_btn {width: 24px; margin-right: 12px; display: none;}/* 전체메뉴 펼치기(햄버거 메뉴) */
 #wrap header .h_left #menu_btn img {width: 100%;}
 #wrap header .h_left h1 { margin-right: 34px;}
 #wrap header .h_left h1 a {display: block; width: 145px;}

@@ -14,7 +14,7 @@
 #wrap #top_bnr .top_bnr_swiper .swiper-wrapper .slide3 {}
 
 /* ====================================== main */
-#wrap main
+#wrap main {}
 /* ====================================== fab */
 #wrap main #fab_wrap {
     position: fixed; right: 32px; bottom: 40px; z-index: 999;
@@ -49,4 +49,4 @@
 #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .slide2 a {background-image: url(../images/main/hero_bnr2.jpg);}
 #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .slide3 a {background-image: url(../images/main/hero_bnr3.jpg);}
 /* --------------------------- swiper-pagination */
-#wrap main #hero_bnr_wrap .hero_bnr_swiper .pagi {}
+#wrap main #hero_bnr_wrap .hero_bnr_swiper .bar {}

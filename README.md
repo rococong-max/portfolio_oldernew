@@ -32,6 +32,8 @@
 * fab_wrap css 작성 및 js 구현 완료
 * hero_wrap css 작성 및 js 통해 swiper 구현 완료
 * fab_wrap css가 안먹음.. 개발자도구에서 아예 안보임..
+    => 해결! css 작성 태그 중에 `{}` 를 빼먹은게 있어서 그런거였음.... 
+* swiper-progressbar 구현 중
 
 ## 헷갈리는 개념 정리
 ### 반응형 웹 - 환경 변화에 따른 header 레이아웃 변화

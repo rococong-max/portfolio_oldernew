@@ -20,6 +20,10 @@ const heroBnrSwiper = new Swiper(heroBnr,{
     autoplay:{delay:3000,},
     disableOnInteraction: false,
     speed:800,
+    pagination:{
+        el:'.hero_bnr_swiper .bar',
+        type:'progressbar',
+    },
 })
 
 
