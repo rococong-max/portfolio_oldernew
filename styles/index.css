@@ -22,7 +22,7 @@
 #wrap main #fab_wrap a {display: block; width: 54px;}
 #wrap main #fab_wrap .top_btn {
     opacity: 0; transform: translateY(20px); 
-    transition: 0.3s;
+    transition: 0.2s;
 }
 #wrap main #fab_wrap .top_btn.show {opacity: 1; transform: translateY(0); }/* 스크롤을 해서 나타난 상태 */
 #wrap main #fab_wrap .top_btn img {width: 100%;}
