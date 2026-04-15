@@ -17,7 +17,7 @@ const topBnrSwiper = new Swiper(topBnr,{
 // 히어로배너 swiper
 const heroBnrSwiper = new Swiper(heroBnr,{
     loop:true,
-    autoplay:{delay:3000,},
+    //autoplay:{delay:3000,},
     disableOnInteraction: false,
     speed:800,
     pagination:{
@@ -26,7 +26,7 @@ const heroBnrSwiper = new Swiper(heroBnr,{
     },
 })
 
-
+// FAB
 // 화면이 일정 길이 만큼 스크롤 되면 top_btn에 .show 클래스명 주기
 window.addEventListener('scroll',function(){
     // scrollY가 200보다 크면 'show' 클래스 추가, 아니면 제거
@@ -36,3 +36,5 @@ window.addEventListener('scroll',function(){
         topBtn.classList.remove('show');
     }
 })
+
+// 

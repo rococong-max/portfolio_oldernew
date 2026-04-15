@@ -1,5 +1,5 @@
 /* common.css */
-/* ==================================header */
+/* ===================================================== header */
 #wrap {}
 #wrap header {
     display: flex; align-items: center; justify-content: space-between; height: 70px;
@@ -43,3 +43,9 @@
 #wrap #side_menu .lnb {}
 #wrap #side_menu .lnb a {}
 #wrap .overlay {} /* 모바일 환경에서 메뉴를 열었을때 뒷 배경이 어둡게 보이도록 함(클릭하면 메뉴 닫힘) */
+
+/* ===================================================== main 공통 디자인 */
+/* ------------------ 상품 가격 디자인 */
+#wrap .price em {font-size: 1.44rem; font-weight: 600;}
+#wrap .price del {font-size: 0.94rem; font-weight: 400; color: #bbb;}
+#wrap .price .discount {font-size: 1.44rem; font-weight: 600; color: #6B32D2;}

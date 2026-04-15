@@ -1,5 +1,5 @@
 /* index.css */
-/* ==================================== 띠배너 */
+/* ================================================================= 띠배너 */
 #wrap #top_bnr {
     background-color: #6B32D2;
 } /* bg */
@@ -13,30 +13,30 @@
 #wrap #top_bnr .top_bnr_swiper .swiper-wrapper .slide2 {}
 #wrap #top_bnr .top_bnr_swiper .swiper-wrapper .slide3 {}
 
-/* ====================================== main */
+/* ===================================================================== main */
 #wrap main {}
-/* ====================================== fab */
+/* ======================================================================= fab */
 #wrap main #fab_wrap {
     position: fixed; right: 32px; bottom: 40px; z-index: 999;
 }
 #wrap main #fab_wrap a {display: block; width: 54px;}
 #wrap main #fab_wrap .top_btn {
     opacity: 0; transform: translateY(20px); 
-    transition: 0.2s;
+    transition: 0.3s;
 }
 #wrap main #fab_wrap .top_btn.show {opacity: 1; transform: translateY(0); }/* 스크롤을 해서 나타난 상태 */
 #wrap main #fab_wrap .top_btn img {width: 100%;}
 #wrap main #fab_wrap .chat_btn {margin-top: 12px;}
 #wrap main #fab_wrap .chat_btn img {width: 100%;}
 
-/* ====================================== 히어로배너 */
+/* =============================================================== 히어로배너 */
 #wrap main #hero_bnr_wrap {}
 #wrap main #hero_bnr_wrap .hero_bnr_swiper {}
 #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper {}
 /* --------------------------- 공통 swiper-slide */
 #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide {}
 #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a {
-    display: block; background-position: center; background-size: cover; padding:290px 230px;
+    display: block; background-position: center; background-size: cover; height: 85vh; padding: 290px 230px;
 }
 #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt {}
 #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt .title {margin-bottom: 28px;}
@@ -49,4 +49,92 @@
 #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .slide2 a {background-image: url(../images/main/hero_bnr2.jpg);}
 #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .slide3 a {background-image: url(../images/main/hero_bnr3.jpg);}
 /* --------------------------- swiper-pagination */
-#wrap main #hero_bnr_wrap .hero_bnr_swiper .bar {}
+#wrap main #hero_bnr_wrap .hero_bnr_swiper .bar {
+    width: 870px; height: 3px; top: auto;
+    bottom: 34px; left: 50%; transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.8);
+}
+#wrap main #hero_bnr_wrap .hero_bnr_swiper .bar .swiper-pagination-progressbar-fill {background: #6B32D2;}
+
+/* ======================================================================================== 베스트 */
+#wrap #best_wrap {padding: 100px 240px;}
+#wrap #best_wrap h1 {font-size: 1.69rem; font-weight: 600; margin-bottom: 40px;}
+#wrap #best_wrap .best_list {display: flex; gap: 18px;}
+/* --------------------------------------- 베스트 상품 공통 */
+#wrap #best_wrap .best_list .best_product {}
+/* --------------------------------------- 베스트 상품 공통 - 이미지박스 */
+#wrap #best_wrap .best_list .best_product .best_photo_box {position: relative; margin-bottom: 18px;}
+#wrap #best_wrap .best_list .best_product .best_photo_box:hover .like_cart {opacity: 1; transform: translate(-50%, 0);}
+#wrap #best_wrap .best_list .best_product .best_photo_box:hover .photo .prod_hover {opacity: 1;}
+#wrap #best_wrap .best_list .best_product .best_photo_box .photo {display: block;}
+#wrap #best_wrap .best_list .best_product .best_photo_box .photo img {width: 100%;}
+#wrap #best_wrap .best_list .best_product .best_photo_box .photo img.prod {}
+#wrap #best_wrap .best_list .best_product .best_photo_box .photo img.prod_hover {
+    position: absolute; top: 0; left: 0; opacity: 0;
+    transition: 0.5s;
+}
+/* --------------------------------------------- 이미지에 호버 했을 때 보이는 아이콘 */
+#wrap #best_wrap .best_list .best_product .best_photo_box .like_cart {
+    position: absolute; bottom: 20px; left: 50%; transform: translate(-50%, 10px); z-index: 888;
+    opacity: 0; transition: 0.3s;
+}
+#wrap #best_wrap .best_list .best_product .best_photo_box .like_cart a {
+    display: inline-block; padding: 10px; background: rgba(255, 255, 255, 0.6); border-radius: 50%;
+}
+#wrap #best_wrap .best_list .best_product .best_photo_box .like_cart a.like {margin-right: 20px;}
+#wrap #best_wrap .best_list .best_product .best_photo_box .like_cart a img {width: 24px; display: block;} 
+/* --------------------------------------- 베스트 상품 공통 - 텍스트박스 */
+#wrap #best_wrap .best_list .best_product .best_txt_box {}
+#wrap #best_wrap .best_list .best_product .best_txt_box > a {}
+#wrap #best_wrap .best_list .best_product .best_txt_box > a h2 {font-size: 1.06rem; font-weight: 500;}
+#wrap #best_wrap .best_list .best_product .best_txt_box > a .price {margin: 12px 0;}
+#wrap #best_wrap .best_list .best_product .best_txt_box > a .price .discount {}
+#wrap #best_wrap .best_list .best_product .best_txt_box > a .price em {}
+#wrap #best_wrap .best_list .best_product .best_txt_box > a .price del {}
+#wrap #best_wrap .best_list .best_product .best_txt_box .review {display: flex; align-items: center;}
+#wrap #best_wrap .best_list .best_product .best_txt_box .review img {}
+#wrap #best_wrap .best_list .best_product .best_txt_box .review span {font-size: 0.81rem; transform: translateY(3px);}
+#wrap #best_wrap .best_list .best_product .best_txt_box .review .rating {margin:0 10px 0 4px;}
+#wrap #best_wrap .best_list .best_product .best_txt_box .review .review_count {}
+
+/* ================================================================================= 신제품 영역 */
+#wrap #new_wrap {padding: 100px 240px;}
+/* --------------------------------------- 제목 + 탭 */
+#wrap #new_wrap .new_title_tab {display: flex; justify-content: space-between; margin-bottom: 32px;}
+#wrap #new_wrap .new_title_tab h1 {font-size: 1.44rem; font-weight: 600;}
+#wrap #new_wrap .new_title_tab .tab {}
+#wrap #new_wrap .new_title_tab .tab a {padding: 8px 24px; background: #e9e9e9; border-radius: 999px; margin-right: 12px;}
+#wrap #new_wrap .new_title_tab .tab a:last-child {margin: 0;}
+#wrap #new_wrap .new_title_tab .tab a.active {background: #6B32D2; color: #fff;}
+/* --------------------------------------- 탭 안 내용 공통 */
+#wrap #new_wrap .new_product {display: flex; justify-content: space-between;}
+/* --------------------------------------- 탭 안 내용 공통 - 텍스트 박스 */
+#wrap #new_wrap .new_product .new_txt_box {}
+#wrap #new_wrap .new_product .new_txt_box > * {margin-bottom: 40px;}
+#wrap #new_wrap .new_product .new_txt_box:last-child {margin: 0;}
+#wrap #new_wrap .new_product .new_txt_box h1 {font-size: 1.88rem; font-weight: 600;}
+#wrap #new_wrap .new_product .new_txt_box .detail {}
+#wrap #new_wrap .new_product .new_txt_box .detail span {display: block; font-size: 0.94rem; line-height: 1.7;}
+#wrap #new_wrap .new_product .new_txt_box .price {}
+#wrap #new_wrap .new_product .new_txt_box .price del {}
+#wrap #new_wrap .new_product .new_txt_box .price .discount {}
+#wrap #new_wrap .new_product .new_txt_box .price em {}
+#wrap #new_wrap .new_product .new_txt_box .more {display: flex; justify-content: space-between; align-items: center;}
+#wrap #new_wrap .new_product .new_txt_box .more .more_btn {padding: 12px 24px; background-color: #f1f1f1; border-radius: 999px;}
+#wrap #new_wrap .new_product .new_txt_box .more .more_btn img {}
+#wrap #new_wrap .new_product .new_txt_box .more .like_cart {}
+#wrap #new_wrap .new_product .new_txt_box .more .like_cart a {display: inline-block; width: 24px;}
+#wrap #new_wrap .new_product .new_txt_box .more .like_cart a.like {margin-right: 16px;}
+#wrap #new_wrap .new_product .new_txt_box .more .like_cart a img {width: 100%;}
+/* --------------------------------------- 탭 안 내용 공통 - 스와이퍼 */
+#wrap #new_wrap .new_product .new_swiper {width: 750px;}
+#wrap #new_wrap .new_product .new_swiper .swiper-wrapper {}
+#wrap #new_wrap .new_product .new_swiper .swiper-wrapper .swiper-slide {}
+/* --------------------------------------- 탭 안 내용 개별 - 스와이퍼 */
+#wrap #new_wrap .new_product .new_swiper .swiper-wrapper .slide1 {}
+#wrap #new_wrap .new_product .new_swiper .swiper-wrapper .slide2 {}
+#wrap #new_wrap .new_product .new_swiper .swiper-wrapper .slide3 {}
+/* --------------------------------------- 탭 안 내용 개별 - 클리어 */
+#wrap #new_wrap .clear_container {}
+/* --------------------------------------- 탭 안 내용 개별 - 컴포트 */
+#wrap #new_wrap .comfort_container {display: none;}
