@@ -12,9 +12,10 @@ const comfortContainer = document.querySelector('#new_wrap .comfort_container');
 const onceDayProd = document.querySelector('#recommendation_wrap .once_day_swiper');
 const vLineProd = document.querySelector('#recommendation_wrap .v_line_swiper');
 const modeProd = document.querySelector('#recommendation_wrap .mode_swiper');
-const onceDayTab = document.querySelector('#recommendation_wrap .once_day')
-const vLineTab = document.querySelector('#recommendation_wrap .v_line')
-const modeTab = document.querySelector('#recommendation_wrap .mode')
+const recProd = document.querySelectorAll('#recommendation_wrap .swiper');
+const onceDayTab = document.querySelector('#recommendation_wrap .once_day');
+const vLineTab = document.querySelector('#recommendation_wrap .v_line');
+const modeTab = document.querySelector('#recommendation_wrap .mode');
 
 console.log(topBnr,topBtn,newProd,clearTab,comfortTab,clearContainer,comfortContainer,onceDayProd);
 console.log(onceDayTab,vLineTab,modeTab);
@@ -85,37 +86,23 @@ function clearShow(e){
 }
 
 // 추천 영역 상품 swiper (모바일 상황에서만 swiper 작동되도록)
-const onceDaySwiper = new Swiper(onceDayProd,{
+const recSwiperCommon = {
     spaceBetween:28,
     slidesPerView:3,
-})
-const vLineSwiper = new Swiper(vLineProd,{
-    spaceBetween:28,
-    slidesPerView:3,
-})
-const modeSwiper = new Swiper(modeProd,{
-    spaceBetween:28,
-    slidesPerView:3,
-})
+    observer: true,
+    observeParents: true,
+}
+const onceDaySwiper = new Swiper(onceDayProd,recSwiperCommon)
+const vLineSwiper = new Swiper(vLineProd,recSwiperCommon)
+const modeSwiper = new Swiper(modeProd,recSwiperCommon)
+
 
 // 추천 영역 탭 전환
-// 클릭하면 함수 실행 (이벤트)
-onceDayTab.addEventListener('click',onceDayShow);
-vLineTab.addEventListener('click',vLineDayShow);
-modeTab.addEventListener('click',modeShow);
-// 함수
-// onceday 클릭
-function onceDayShow(e){
-    e.preventDefault();
-    
-}
-// vline 클릭
-function vLineDayShow(e){
-    e.preventDefault();
-
-}
-// mode 클릭
-function modeShow(e){
-    e.preventDefault();
-
-}
+// 1. 탭 안 컨텐츠 다 안보이게 하고
+// 2. 개별 인덱스로 해당 컨텐츠만 보이도록 함, 해당 탭 활성화 -> .active로 조절 
+// 3. 클릭 이벤트로 연결
+function recShowHide(index){
+    for (let i = 0; i < recProd.length; i++){
+        
+    }
+} 

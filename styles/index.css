@@ -158,7 +158,8 @@
 #wrap main #recommendation_wrap .recommendation_left .tab a.active {background: #6B32D2; color: #fff;}
 #wrap main #recommendation_wrap .recommendation_right {}
 /* ------------------------------------------------ 공통 */
-#wrap main #recommendation_wrap .recommendation_right .swiper {width: 1106px;}
+#wrap main #recommendation_wrap .recommendation_right .swiper {width: 1106px; display: none;}
+#wrap main #recommendation_wrap .recommendation_right .active {width: 1106px; display: block;}
 #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper {}
 #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide {}
 /* ------------------------------------------------ 공통 이미지 영역 */
@@ -196,5 +197,5 @@
 #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box .review span {transform: translateY(3px);}
 #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box .review .rating {margin: 0 10px 0 4px;}
 #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box .review .review_count {}
-#wrap main #recommendation_wrap .recommendation_right .v_line_swiper {display: none;}
-#wrap main #recommendation_wrap .recommendation_right .mode_swiper {display:none;}
+#wrap main #recommendation_wrap .recommendation_right .v_line_swiper {}
+#wrap main #recommendation_wrap .recommendation_right .mode_swiper {}
