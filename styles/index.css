@@ -167,19 +167,19 @@
 }
 #wrap main #recommendation_wrap .recommendation_left .tab a:last-child {margin: 0;}
 #wrap main #recommendation_wrap .recommendation_left .tab a.active {background: #6B32D2; color: #fff;}
-#wrap main #recommendation_wrap .recommendation_right {width: 80%;}
+#wrap main #recommendation_wrap .recommendation_right {}
 /* ------------------------------------------------ 공통 */
-#wrap main #recommendation_wrap .recommendation_right .swiper {display: none;}
-#wrap main #recommendation_wrap .recommendation_right .active {display: block;}
+#wrap main #recommendation_wrap .recommendation_right .swiper {width: 1106px; display: none;}
+#wrap main #recommendation_wrap .recommendation_right .active {width: 1106px; display: block;}
 #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper {}
 #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide {}
 /* ------------------------------------------------ 공통 이미지 영역 */
-#wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .photo_box {position: relative; margin-bottom: 18px; width: max-content;}
+#wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .photo_box {width: max-content; position: relative; margin-bottom: 18px;}
 #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .photo_box:hover .like_cart {
     opacity: 1; transform: translate(-50%, 0);
 }
 #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .photo_box:hover .photo .prod_hover {opacity: 1;}
-#wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .photo_box .photo {display: block;}
+#wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .photo_box .photo {}
 #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .photo_box .photo img {}
 #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .photo_box .photo .prod_hover {
     position: absolute; top: 0; left: 0; opacity: 0;
@@ -200,7 +200,7 @@
 #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box a h2 {font-size: 1.06rem; font-weight: 500;}
 #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box a .price {margin: 12px 0;}
 #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box a .price .discount {font-size: 1.19rem; font-weight: 600; color: #6B32D2;}
-#wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box a .price em {font-size: 1.19rem; font-weight: 600; margin: 4px;}
+#wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box a .price em {font-size: 1.19rem; font-weight: 600;}
 #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box a .price del {font-size: 0.88rem; color: #bbb;}
 #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box .review {display: flex; align-items: center;}
 #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box .review > * {font-size: 0.81rem;}
@@ -213,11 +213,11 @@
 /* ================================================================================= 멤버십 배너 영역 */
 #wrap main #membership_bnr_wrap {}
 #wrap main #membership_bnr_wrap .membership_bnr {
-    display: block; height: 300px;
+    display: block; padding: 100px 300px;
     background-position: center; background-size: cover;
     background-image: url(../images/main/membership_bnr.jpg);
 }/* bg */
-#wrap main #membership_bnr_wrap .membership_bnr .member_txt_box {position: relative; top: 50%; left: 300px; transform: translateY(-50%);}
+#wrap main #membership_bnr_wrap .membership_bnr .member_txt_box {}
 #wrap main #membership_bnr_wrap .membership_bnr .member_txt_box p {font-size: 1.25rem; font-weight: 500;}
 #wrap main #membership_bnr_wrap .membership_bnr .member_txt_box h1 {font-size: 1.69rem; font-weight: 600; margin: 16px 0;}
 #wrap main #membership_bnr_wrap .membership_bnr .member_txt_box h1+p {}
@@ -305,7 +305,7 @@
 }
 #wrap main #magazine_wrap .magazine_swiper .swiper-wrapper .swiper-slide a dl {position: absolute; bottom: 0; left: 0; padding: 24px;}
 #wrap main #magazine_wrap .magazine_swiper .swiper-wrapper .swiper-slide a dl dt,
-#wrap main #magazine_wrap .magazine_swiper .swiper-wrapper .swiper-slide a dl dt span {font-size: 1.19rem; font-weight: 600; margin-bottom: 12px; display: block;}
+#wrap main #magazine_wrap .magazine_swiper .swiper-wrapper .swiper-slide a dl dt span {font-size: 1.19rem; font-weight: 600; margin-bottom: 12px;}
 #wrap main #magazine_wrap .magazine_swiper .swiper-wrapper .swiper-slide a dl dd {font-size: 0.94rem;}
 /* ----------------------------------------------------------- swiper-slide 개별 디자인 */
 #wrap main #magazine_wrap .magazine_swiper .swiper-wrapper .slide1 a {background-image: url(../images/main/magazine1.jpg);}
