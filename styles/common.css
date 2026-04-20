@@ -2,7 +2,7 @@
 /* ========================================== 스크롤 시 화면이 부드럽게 올라감 */
 html {scroll-behavior: smooth;}
 /* ===================================================== header */
-#wrap {min-width: 250px;}
+#wrap {min-width: 250px; max-width: 1920px;}
 #wrap header {
     display: flex; align-items: center; justify-content: space-between; height: 70px;
     padding: 0 240px; position: sticky; top: 0; z-index: 999; background: #fff;
@@ -48,5 +48,5 @@ html {scroll-behavior: smooth;}
 
 
 /* =================================================== 메인 안 컨텐츠 사이즈 */
-#wrap main .container_layout {padding: 100px 240px;}
-#wrap main .full_layout {padding: 100px 0;}
+#wrap main .container_layout {width: 1400px; margin: 100px auto;}
+#wrap main .full_layout {margin: 100px 0;}

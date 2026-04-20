@@ -94,7 +94,7 @@ function clearShow(e){
 // 추천 영역 상품 swiper (모바일 상황에서만 swiper 작동되도록).
 
 const recSwiperCommon = {
-    spaceBetween:28,
+    spaceBetween:36,
     slidesPerView:3,
     observer: true,
     observeParents: true,

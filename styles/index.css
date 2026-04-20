@@ -167,19 +167,19 @@
 }
 #wrap main #recommendation_wrap .recommendation_left .tab a:last-child {margin: 0;}
 #wrap main #recommendation_wrap .recommendation_left .tab a.active {background: #6B32D2; color: #fff;}
-#wrap main #recommendation_wrap .recommendation_right {width: 1106px;}
+#wrap main #recommendation_wrap .recommendation_right {width: 80%;}
 /* ------------------------------------------------ 공통 */
 #wrap main #recommendation_wrap .recommendation_right .swiper {display: none;}
 #wrap main #recommendation_wrap .recommendation_right .active {display: block;}
 #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper {}
 #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide {}
 /* ------------------------------------------------ 공통 이미지 영역 */
-#wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .photo_box {position: relative; margin-bottom: 18px;}
+#wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .photo_box {position: relative; margin-bottom: 18px; width: max-content;}
 #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .photo_box:hover .like_cart {
     opacity: 1; transform: translate(-50%, 0);
 }
 #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .photo_box:hover .photo .prod_hover {opacity: 1;}
-#wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .photo_box .photo {}
+#wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .photo_box .photo {display: block;}
 #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .photo_box .photo img {}
 #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .photo_box .photo .prod_hover {
     position: absolute; top: 0; left: 0; opacity: 0;
@@ -277,9 +277,9 @@
 #wrap main #best_review_wrap .review_swiper_wrap .review_swiper .swiper-wrapper .slide2 .review_photo_box {background-image: url(../images/main/review2.jpg);}
 #wrap main #best_review_wrap .review_swiper_wrap .review_swiper .swiper-wrapper .slide3 .review_photo_box {background-image: url(../images/main/review3.jpg);}
 #wrap main #best_review_wrap .review_swiper_wrap .review_swiper .swiper-wrapper .slide4 .review_photo_box {background-image: url(../images/main/review4.jpg);}
-#wrap main #best_review_wrap .review_swiper_wrap .review_swiper .swiper-wrapper .slide5 .review_photo_box {background-image: url(../images/main/review5.png);}
+#wrap main #best_review_wrap .review_swiper_wrap .review_swiper .swiper-wrapper .slide5 .review_photo_box {background-image: url(../images/main/review5.jpg);}
 #wrap main #best_review_wrap .review_swiper_wrap .review_swiper .swiper-wrapper .slide6 .review_photo_box {background-image: url(../images/main/review6.jpg);}
-#wrap main #best_review_wrap .review_swiper_wrap .review_swiper .swiper-wrapper .slide7 .review_photo_box {background-image: url(../images/main/review7.png);}
+#wrap main #best_review_wrap .review_swiper_wrap .review_swiper .swiper-wrapper .slide7 .review_photo_box {background-image: url(../images/main/review7.jpg);}
 #wrap main #best_review_wrap .review_swiper_wrap .review_swiper .swiper-wrapper .slide8 .review_photo_box {background-image: url(../images/main/review8.jpg);}
 /* ----------------------------------------------------------- viewmore 버튼  */
 #wrap main #best_review_wrap .more_btn {

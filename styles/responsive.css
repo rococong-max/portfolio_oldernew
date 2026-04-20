@@ -1,4 +1,5 @@
 /* responsive.css */
+@media screen and (max-width:1600px) {}
 @media screen and (max-width:1024px) {/* 1024px 이하 너비일 때 */
     #wrap header {padding: 0 30px;}
     #wrap main .container_layout {padding: 80px 30px;}
