@@ -1,6 +1,8 @@
 /* common.css */
+/* ========================================== 스크롤 시 화면이 부드럽게 올라감 */
+html {scroll-behavior: smooth;}
 /* ===================================================== header */
-#wrap {}
+#wrap {min-width: 250px;}
 #wrap header {
     display: flex; align-items: center; justify-content: space-between; height: 70px;
     padding: 0 240px; position: sticky; top: 0; z-index: 999; background: #fff;
@@ -43,3 +45,8 @@
 #wrap #side_menu .lnb {}
 #wrap #side_menu .lnb a {}
 #wrap .overlay {} /* 모바일 환경에서 메뉴를 열었을때 뒷 배경이 어둡게 보이도록 함(클릭하면 메뉴 닫힘) */
+
+
+/* =================================================== 메인 안 컨텐츠 사이즈 */
+#wrap main .container_layout {padding: 100px 240px;}
+#wrap main .full_layout {padding: 100px 0;}
