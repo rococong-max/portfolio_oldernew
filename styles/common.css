@@ -5,7 +5,7 @@ html {scroll-behavior: smooth;}
 #wrap {}
 #wrap header {
     display: flex; align-items: center; justify-content: space-between; height: 70px;
-    padding: 0 240px; position: sticky; top: 0; z-index: 999; background: #fff;
+    position: sticky; top: 0; z-index: 999; background: #fff; padding: 0 240px;
 }
 #wrap header .h_left {display: flex; align-items: center;}
 #wrap header .h_left #menu_btn {width: 24px; margin-right: 12px; display: none;}/* 전체메뉴 펼치기(햄버거 메뉴) */

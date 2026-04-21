@@ -63,7 +63,7 @@
 #wrap main #hero_bnr_wrap .hero_bnr_swiper .bar .swiper-pagination-progressbar-fill {background: #6B32D2;}
 
 /* ======================================================================================== 베스트 */
-#wrap main #best_wrap {}
+#wrap main #best_wrap {width: 1440px; margin: 100px auto 200px;}
 #wrap main #best_wrap h1 {font-size: 1.69rem; font-weight: 600; margin-bottom: 40px;}
 #wrap main #best_wrap .best_list {display: flex; gap: 18px;}
 /* --------------------------------------- 베스트 상품 공통 */
@@ -102,7 +102,7 @@
 #wrap main #best_wrap .best_list .best_product .txt_box .review .review_count {}
 
 /* ================================================================================= 신제품 영역 */
-#wrap main #new_wrap {}
+#wrap main #new_wrap {width: 1440px; margin: 0 auto 200px;}
 /* --------------------------------------- 제목 + 탭 */
 #wrap main #new_wrap .new_title_tab {display: flex; justify-content: space-between; margin-bottom: 32px;}
 #wrap main #new_wrap .new_title_tab h1 {font-size: 1.44rem; font-weight: 600;}
@@ -155,7 +155,10 @@
 #wrap main #new_wrap .comfort_container {display: none;}
 
 /* ================================================================================= 상품추천 영역 */
-#wrap main #recommendation_wrap {display: flex; justify-content: space-between;}
+#wrap main #recommendation_wrap {
+    width: 1440px; margin: 0 auto 200px;
+    display: flex; justify-content: space-between;
+}
 #wrap main #recommendation_wrap .recommendation_left {}
 #wrap main #recommendation_wrap .recommendation_left h1 {font-size: 1.69rem; font-weight: 600; line-height: 1.5; margin-bottom: 32px;}
 #wrap main #recommendation_wrap .recommendation_left h1 span {display: block; font-size: 1.69rem; font-weight: 600;}
@@ -211,7 +214,7 @@
 
 
 /* ================================================================================= 멤버십 배너 영역 */
-#wrap main #membership_bnr_wrap {}
+#wrap main #membership_bnr_wrap {margin-bottom: 200px;}
 #wrap main #membership_bnr_wrap .membership_bnr {
     display: block; padding: 100px 300px;
     background-position: center; background-size: cover;
@@ -223,10 +226,11 @@
 #wrap main #membership_bnr_wrap .membership_bnr .member_txt_box h1+p {}
 
 /* ================================================================================= 베스트 리뷰 영역 */
-#wrap main #best_review_wrap {}
+#wrap main #best_review_wrap {margin-bottom: 200px;}
+#wrap main #best_review_wrap > * {margin: 0 auto;}
 #wrap main #best_review_wrap .review_title_btn {
     display: flex; justify-content: space-between; align-items: center;
-    padding: 0 240px; position: relative;
+    position: relative; padding: 0 240px;
 }
 #wrap main #best_review_wrap .review_title_btn h1 {font-size: 1.69rem; font-weight: 600;}
 /* ------------------------------------------------------------ swiper 버튼  */
@@ -284,7 +288,7 @@
 /* ----------------------------------------------------------- viewmore 버튼  */
 #wrap main #best_review_wrap .more_btn {
     padding: 12px 24px; background-color: #f1f1f1; border-radius: 999px;
-    margin: 0 auto; display: block; width: max-content; transition: 0.3s;
+    display: block; width: max-content; transition: 0.3s;
 }
 #wrap main #best_review_wrap .more_btn span {margin-right: 10px;}
 #wrap main #best_review_wrap .more_btn img {transform: translateY(3px); transition: 0.3s;}
@@ -293,7 +297,7 @@
 #wrap main #best_review_wrap .more_btn:hover img {transform: translateY(3px) rotate(90deg); filter: brightness(0) invert(1);}
 
 /* ================================================================================= 매거진 영역 */
-#wrap main #magazine_wrap {}
+#wrap main #magazine_wrap {margin-bottom: 200px;}
 #wrap main #magazine_wrap h1 {padding: 0 240px; font-size: 1.69rem; font-weight: 600; margin-bottom: 50px;}
 #wrap main #magazine_wrap .magazine_swiper {}
 #wrap main #magazine_wrap .magazine_swiper .swiper-wrapper {}
