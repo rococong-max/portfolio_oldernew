@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>뮤신 딥글로우 | 올더뮤</title>
+    <!-- 플러그인, 웹글꼴, 파비콘 -->
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <!-- pretendard 웹글꼴 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+    <!-- prata 웹글꼴 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <!--swiper 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--swiper 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- 개별 사용자 디자인 파일 -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/detail.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <script src="./scripts/common.js" defer></script>
+    <script src="./scripts/index.js" defer></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="top_bnr"> <!-- bg -->
+            <div class="swiper top_bnr_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">
+                        <a href="#">지금 회원가입시 15,000원 쿠폰 바로 증정!</a>
+                    </div>
+                    <div class="swiper-slide slide2">
+                        <a href="#">올더뮤 소개하고 적립금 20만원 받자!</a>
+                    </div>
+                    <div class="swiper-slide slide3">
+                        <a href="#">올더뮤 카카오플러스 추가 시 4,000원 쿠폰 증정!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_bg">
+            <header>
+                <div class="h_left">
+                    <button type="button" id="menu_btn"><img src="./images/common/menu.png" alt="메뉴 열기"></button><!-- 모바일 환경에서 보여지는 햄버거메뉴 아이콘 -->
+                    <h1><a href="#"><img src="./images/common/logo.png" alt="올더뮤"></a></h1>
+                    <nav class="gnb_pc"><!-- pc, tablet 용 -->
+                        <a href="#">전체 상품</a>
+                        <a href="#">베스트</a>
+                        <a href="#">이벤트</a>
+                        <a href="#">정기 배송</a>
+                        <a href="#">멤버십</a>
+                        <a href="#">브랜드</a>
+                    </nav>
+                </div>
+                <div class="h_right">
+                    <form action="#" method="post" id="search_box">
+                        <input type="search" name="search_txt" id="search_txt" placeholder="프리카뮤신이 올더뮤로 새롭게 태어났어요!">
+                        <button type="submit" id="search_btn"><img src="./images/common/search.png" alt="검색하기"></button>
+                    </form>
+                    <div class="user_box">
+                        <a href="#" class="user"><img src="./images/common/user.png" alt="회원"></a>
+                        <a href="#" class="cart"><img src="./images/common/cart.png" alt="장바구니"></a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div id="side_menu"><!-- 햄버거메뉴 클릭하면 보이는 영역 -->
+            <div class="menu_top">
+                    <div class="login">
+                        <a href="#">로그인 / 회원가입<img src="./images/common/next.png" alt=""></a>
+                        <p>지금 로그인/회원가입하고 풍성한 헤택을 받아보세요!</p>
+                    </div>
+                <button type="button" id="close_btn"><img src="./images/common/close.png" alt="메뉴 닫기"></button>
+            </div>
+            <nav class="gnb_mobile"><!-- mobile(js로 복붙) --></nav>
+            <div class="lnb">
+                <a href="#">비회원 주문조회</a>
+                <a href="#">고객센터</a>
+                <a href="#">공지사항</a>
+                <a href="#">도움말</a>
+                <a href="#">FAQ</a>
+            </div>
+        </div>
+        <div class="overlay"></div><!-- 모바일 환경에서 메뉴를 열었을때 뒷 배경이 어둡게 보이도록 함(클릭하면 메뉴 닫힘) -->
+        <main></main>
+        <footer>
+            <div class="f_left">
+                <h1 class="f_logo"><img src="./images/common/logo.png" alt="올더뮤"></h1>
+                <div class="customer_service">
+                    <address><span class="label">고객센터</span><span class="tel">02-6369-5429</span></address>
+                    <p class="tel_time">평일 오전 10시 ~ 오후 5시 (주말/공휴일 휴무)<br>점심 오후 12시 ~ 오후 1시</p>
+                </div>
+                <div class="customer_support">
+                    <a href="#" class="faq">FAQ</a>
+                    <a href="#" class="instargram"><img src="./images/common/instar.png" alt="인스타그램 바로가기"></a>
+                    <a href="#" class="kakao"><img src="./images/common/kakao.png" alt="카카오톡 문의하기"></a>
+                    <a href="#" class="naver"><img src="./images/common/naver.png" alt="네이버톡톡 문의하기"></a>
+                </div>
+            </div>
+            <div class="f_right">
+                <h2>COMPANY INFO</h2>
+                <p>(주)에이지엣랩스 사업자정보<br>대표이사 : 이정석<br>사업자등록번호 : 663-87-00990 [사업자정보확인]<br>통신판매업신고 : 제2025-서울중구-615호</p>
+                <address>주소 : 04637 13층 039호, 서울 중구 한강대로 416 서울스퀘어<br>전화번호 : 02-6369-5429</address>
+                <p>호스팅 사업자 : (주)카페24<br>Copyright &copy; AGE At Labs Co., Ltd. All rights reserved</p>
+            </div>
+            <div class="f_bottom">
+                <a href="#">회사소개</a>
+                <a href="#">이용약관</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="#">이용안내</a>
+                <a href="#">공지사항</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
