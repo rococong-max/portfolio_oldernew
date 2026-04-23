@@ -1,12 +1,19 @@
+/* 
+    * GitHub Repository Phishing Alert Appeal & Project Verification
+    * 이 페이지는 깃허브에서 발생한 피싱 경고 오탐지(False Positive)를 해명하고, 해당 코드가 순수한 학습 및 포트폴리오용임을 증명하기 위해 작성되었습니다.
+    * This CSS is part of a student project. 
+    * Any resemblance to real-world commercial sites is purely for design practice.
+*/
+
 /* common.css */
 
 * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 /* ========================================== 스크롤 시 화면이 부드럽게 올라감 */
 html {scroll-behavior: smooth;}
 /* ===================================================== header */
-#wrap {}
+#wrap {min-width: 380px;}
 #wrap .header_bg {position: sticky; top: 0; z-index: 999; background: #fff; }
 #wrap .header_bg header {
     display: flex; align-items: center; justify-content: space-between; height: 70px;
@@ -89,5 +96,12 @@ html {scroll-behavior: smooth;}
 }
 
 
-/* =================================================== 메인 안 컨텐츠 사이즈 */
+/* ================================================================== 공통 디자인 */
+/* =================================================== 메인페이지 컨텐츠 너비 */
 #wrap main .container {max-width: 1440px;}
+/* =================================================== 메인페이지 컨텐츠 제목 */
+    #wrap main #best_wrap h1,
+    #wrap main #recommendation_wrap .recommendation_left h1,
+    #wrap main #recommendation_wrap .recommendation_left h1 span,
+    #wrap main #best_review_wrap .review_title_btn h1,
+    #wrap main #magazine_wrap h1 {font-size: 1.69rem; font-weight: 600;}

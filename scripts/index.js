@@ -1,3 +1,11 @@
+/*
+    * GitHub Repository Phishing Alert Appeal & Project Verification
+    * 이 페이지는 깃허브에서 발생한 피싱 경고 오탐지(False Positive)를 해명하고, 해당 코드가 순수한 학습 및 포트폴리오용임을 증명하기 위해 작성되었습니다.
+    * PROJECT: Portfolio Prototype
+    * WARNING: This script does not process real transactions or user credentials.
+    * All functions are for demonstration purposes only.
+*/
+
 // index.js
 
 // 변수
@@ -60,14 +68,17 @@ const heroBnrSwiper = new Swiper(heroBnr,{
 const clearSwiper = new Swiper(newProd[0],{
     loop:true,
     autoplay:{delay:3000,},
-    slidesPerView:1.8,
+    slidesPerView:1.8, /* 모바일 상황에서 보이는 개수 */
     spaceBetween : 24,
 })
 const comfortSwiper = new Swiper(newProd[1],{
     loop:true,
     autoplay:{delay:3000,},
-    slidesPerView:1.8,
+    slidesPerView:1.8, /* 모바일 상황에서 보이는 개수 */
     spaceBetween : 24,
+    breakpoints:{
+        809:{},
+    },
 })
 
 // 신제품 탭 메뉴 전환
@@ -97,9 +108,12 @@ function clearShow(e){
 
 const recSwiperCommon = {
     spaceBetween:36,
-    slidesPerView:3,
+    slidesPerView:2, /* 모바일 상황에서 보이는 개수 */
     observer: true,
     observeParents: true,
+    breakpoints:{
+        570:{slidesPerView:3,},
+    },
 }
 const onceDaySwiper = new Swiper(onceDayProd,recSwiperCommon)
 const vLineSwiper = new Swiper(vLineProd,recSwiperCommon)
@@ -134,17 +148,19 @@ recTab[2].addEventListener('click', tabClickFunc);
 // swiper
 const reviewSwiper = new Swiper(reviewList,{
     spaceBetween:32,
-    slidesPerView: 1.7,
+    slidesPerView: 1.7, /* 모바일 화면 기준 보이는 슬라이드 개수 */
     centeredSlides:true,
     loop:true,
     navigation:{
         prevEl:'.review_title_btn .btn_box .prev',
         nextEl:'.review_title_btn .btn_box .next',
     },
+    // 반응형 너비 평균 640 / 768 / 1024 (디자인에 따라 수정,추가 가능)
     breakpoints:{
-        640:{slidesPerView: 3,},
-        768:{slidesPerView: 4,},
-        1024:{slidesPerView: 5,},
+        640:{slidesPerView: 2,},
+        768:{slidesPerView: 3,},
+        1200:{slidesPerView: 4,},
+        1600:{slidesPerView: 5,},
     },
 })
 
@@ -152,7 +168,13 @@ const reviewSwiper = new Swiper(reviewList,{
 // swiper
 const magazineSwiper = new Swiper(magazineList, {
     spaceBetween:12,
-    slidesPerView: 5,
+    slidesPerView: 1.7,/* 모바일 화면 기준 보이는 슬라이드 개수 */
     centeredSlides:true,
     loop:true,
+    breakpoints:{/* --px 이상 일때 보이는 개수 */
+        640:{slidesPerView: 2,},
+        768:{slidesPerView: 3,},
+        1200:{slidesPerView: 4,},
+        1600:{slidesPerView: 5,},
+    },
 })

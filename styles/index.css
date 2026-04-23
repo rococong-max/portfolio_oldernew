@@ -43,13 +43,14 @@
 #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide {}
 #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a {
     display: block; height: 85vh; position: relative;
-    background-position: center; background-size: cover; 
+    background-position:right; background-size: cover; 
 }
 #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt {position: absolute; top: 50%; left: 230px; transform: translateY(-50%);}
 #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt .title {margin-bottom: 28px;}
 #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt .title > * {font-size: 2.63rem;}
 #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt .title p {margin-bottom: 16px;}
 #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt .title h1 {font-weight: 700;}
+#wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt .title span {font-weight: 700;}
 #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt > .detail {font-size: 1.5rem; line-height: 1.5;}
 /* --------------------------- 개별 slide */
 #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .slide1 a {background-image: url(../images/main/hero_bnr1.jpg);}
@@ -64,8 +65,8 @@
 #wrap main #hero_bnr_wrap .hero_bnr_swiper .bar .swiper-pagination-progressbar-fill {background: #6B32D2;}
 
 /* ======================================================================================== 베스트 */
-#wrap main #best_wrap {/* width: 1440px; */ margin: 100px auto 200px;}
-#wrap main #best_wrap h1 {font-size: 1.69rem; font-weight: 600; margin-bottom: 40px;}
+#wrap main #best_wrap {margin: 100px auto 200px;}
+#wrap main #best_wrap h1 {margin-bottom: 50px;}
 #wrap main #best_wrap .best_list {display: flex; gap: 18px;}
 /* --------------------------------------- 베스트 상품 공통 */
 #wrap main #best_wrap .best_list .best_product {}
@@ -91,7 +92,8 @@
 /* --------------------------------------- 베스트 상품 공통 - 텍스트박스 */
 #wrap main #best_wrap .best_list .best_product .txt_box {}
 #wrap main #best_wrap .best_list .best_product .txt_box > a {}
-#wrap main #best_wrap .best_list .best_product .txt_box > a h2 {font-size: 1.06rem; font-weight: 500;}
+#wrap main #best_wrap .best_list .best_product .txt_box > a h2,
+#wrap main #best_wrap .best_list .best_product .txt_box > a h2 span {font-size: 1.06rem; font-weight: 500;}
 #wrap main #best_wrap .best_list .best_product .txt_box > a .price {margin: 12px 0;}
 #wrap main #best_wrap .best_list .best_product .txt_box > a .price .discount {font-size: 1.19rem; font-weight: 600; color: #6B32D2;}
 #wrap main #best_wrap .best_list .best_product .txt_box > a .price em {font-size: 1.19rem; font-weight: 600; margin: 4px;}
@@ -143,7 +145,7 @@
 #wrap main #new_wrap .new_product .new_txt_box .more .like_cart a.like {margin-right: 16px;}
 #wrap main #new_wrap .new_product .new_txt_box .more .like_cart a img {width: 100%;}
 /* --------------------------------------- 탭 안 내용 공통 - 스와이퍼 */
-#wrap main #new_wrap .new_product .new_swiper {max-width: 750px; margin:0;}
+#wrap main #new_wrap .new_product .new_swiper {width: 60%; margin:0;}
 #wrap main #new_wrap .new_product .new_swiper .swiper-wrapper {}
 #wrap main #new_wrap .new_product .new_swiper .swiper-wrapper .swiper-slide {}
 #wrap main #new_wrap .new_product .new_swiper .swiper-wrapper .swiper-slide img {width: 100%;}
@@ -158,19 +160,18 @@
 
 /* ================================================================================= 상품추천 영역 */
 #wrap main #recommendation_wrap {
-    /* width: 1440px; */ margin: 0 auto 200px;
+    margin: 0 auto 200px;
     display: flex; justify-content: space-between;
 }
 #wrap main #recommendation_wrap .recommendation_left {}
-#wrap main #recommendation_wrap .recommendation_left h1 {font-size: 1.69rem; font-weight: 600; line-height: 1.5; margin-bottom: 32px;}
-#wrap main #recommendation_wrap .recommendation_left h1 span {display: block; font-size: 1.69rem; font-weight: 600;}
+#wrap main #recommendation_wrap .recommendation_left h1 {line-height: 1.5; margin-bottom: 32px;}
+#wrap main #recommendation_wrap .recommendation_left h1 span {display: block;}
 #wrap main #recommendation_wrap .recommendation_left .tab {}
 #wrap main #recommendation_wrap .recommendation_left .tab a {
     display: block; width: max-content; font-weight: 500; text-align: center;
     padding: 12px 24px; background: #e9e9e9; border-radius: 999px;
     margin-bottom: 16px;
 }
-#wrap main #recommendation_wrap .recommendation_left .tab a:last-child {margin: 0;}
 #wrap main #recommendation_wrap .recommendation_left .tab a.active {background: #6B32D2; color: #fff;}
 #wrap main #recommendation_wrap .recommendation_right {width: 80%;}
 /* ------------------------------------------------ swiper 공통 */
@@ -203,9 +204,10 @@
 #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box {}
 #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box a {}
 #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box a h2 {font-size: 1.06rem; font-weight: 500;}
+#wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box a h2 span {font-size: 1.06rem; font-weight: 500;}
 #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box a .price {margin: 12px 0;}
 #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box a .price .discount {font-size: 1.19rem; font-weight: 600; color: #6B32D2;}
-#wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box a .price em {font-size: 1.19rem; font-weight: 600;}
+#wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box a .price em {font-size: 1.19rem; font-weight: 600; margin: 4px;}
 #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box a .price del {font-size: 0.88rem; color: #bbb;}
 #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box .review {display: flex; align-items: center;}
 #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box .review > * {font-size: 0.81rem;}
@@ -219,7 +221,7 @@
 #wrap main #membership_bnr_wrap {margin-bottom: 200px;}
 #wrap main #membership_bnr_wrap .membership_bnr {
     display: block; padding: 100px 300px;
-    background-position: center; background-size: cover;
+    background-position: right ; background-size: cover;
     background-image: url(../images/main/membership_bnr.jpg);
 }/* bg */
 #wrap main #membership_bnr_wrap .membership_bnr .member_txt_box {}
@@ -233,7 +235,7 @@
     display: flex; justify-content: space-between; align-items: center;
     max-width: 1440px; margin: 0 auto;
 }
-#wrap main #best_review_wrap .review_title_btn h1 {font-size: 1.69rem; font-weight: 600;}
+#wrap main #best_review_wrap .review_title_btn h1 {}
 /* ------------------------------------------------------------ swiper 버튼  */
 #wrap main #best_review_wrap .review_title_btn .btn_box {position: relative;}
 #wrap main #best_review_wrap .review_title_btn .btn_box .prev,
@@ -299,7 +301,7 @@
 
 /* ================================================================================= 매거진 영역 */
 #wrap main #magazine_wrap {margin-bottom: 200px;}
-#wrap main #magazine_wrap h1 {max-width: 1440px; margin: 0 auto; font-size: 1.69rem; font-weight: 600; margin-bottom: 50px;}
+#wrap main #magazine_wrap h1 {max-width: 1440px; margin: 0 auto; margin-bottom: 50px;}
 #wrap main #magazine_wrap .magazine_swiper {}
 #wrap main #magazine_wrap .magazine_swiper .swiper-wrapper {}
 /* ----------------------------------------------------------- swiper-slide 공통 디자인 */
@@ -311,6 +313,7 @@
 #wrap main #magazine_wrap .magazine_swiper .swiper-wrapper .swiper-slide a dl {position: absolute; bottom: 0; left: 0; padding: 24px;}
 #wrap main #magazine_wrap .magazine_swiper .swiper-wrapper .swiper-slide a dl dt,
 #wrap main #magazine_wrap .magazine_swiper .swiper-wrapper .swiper-slide a dl dt span {font-size: 1.19rem; font-weight: 600; margin-bottom: 12px;}
+#wrap main #magazine_wrap .magazine_swiper .swiper-wrapper .swiper-slide a dl dt span {display: block;}
 #wrap main #magazine_wrap .magazine_swiper .swiper-wrapper .swiper-slide a dl dd {font-size: 0.94rem;}
 /* ----------------------------------------------------------- swiper-slide 개별 디자인 */
 #wrap main #magazine_wrap .magazine_swiper .swiper-wrapper .slide1 a {background-image: url(../images/main/magazine1.jpg);}
@@ -323,8 +326,9 @@
 #wrap main #magazine_wrap .magazine_swiper .swiper-wrapper .slide8 a {background-image: url(../images/main/magazine8.jpg);}
 
 /* ================================================================================= 브랜드 영역 */
-#wrap main #brand_wrap {background-image: url(../images/main/brand.jpg); padding: 100px 0;}/* bg */
-#wrap main #brand_wrap .brand_txt {text-align: center;}
-#wrap main #brand_wrap .brand_txt h1 {font-family: 'prata',serif; font-size: 1.63rem; font-weight: 400;}
-#wrap main #brand_wrap .brand_txt h1+p {margin: 24px 0;}
-#wrap main #brand_wrap .brand_txt p {line-height: 1.7;}
+#wrap main #brand_wrap {background-image: url(../images/main/brand.jpg); background-position: center; background-size: cover;}/* bg */
+#wrap main #brand_wrap .brand {display: block; width: 100%; padding: 100px 0;}
+#wrap main #brand_wrap .brand .brand_txt {text-align: center;}
+#wrap main #brand_wrap .brand .brand_txt h1 {font-family: 'prata',serif; font-size: 1.63rem; font-weight: 400;}
+#wrap main #brand_wrap .brand .brand_txt h1+p {margin: 24px 0;}
+#wrap main #brand_wrap .brand .brand_txt p {line-height: 1.7;}

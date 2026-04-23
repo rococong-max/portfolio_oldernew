@@ -89,7 +89,200 @@
             </div>
         </div>
         <div class="overlay"></div><!-- 모바일 환경에서 메뉴를 열었을때 뒷 배경이 어둡게 보이도록 함(클릭하면 메뉴 닫힘) -->
-        <main></main>
+        <main>
+            <div id="product_wrap">
+                <div class="product_left"><!-- 왼쪽 영역 (상품이미지, 탭이동메뉴, 상품정보, 추천상품, 리뷰, 배송교환등 안내) -->
+                    <div class="prouct_photo_box">
+                        <div class="swiper product_swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide slide1"><a href="#"><img src="" alt=""></a></div>
+                                <div class="swiper-slide slide1"><a href="#"><img src="" alt=""></a></div>
+                                <div class="swiper-slide slide1"><a href="#"><img src="" alt=""></a></div>
+                                <div class="swiper-slide slide1"><a href="#"><img src="" alt=""></a></div>
+                                <div class="swiper-slide slide1"><a href="#"><img src="" alt=""></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab_menu">
+                        <a href="#" data-detail-tab="0">상품 정보</a>
+                        <a href="#" data-detail-tab="1">추천 상품</a>
+                        <a href="#" data-detail-tab="2">리뷰(46223)</a>
+                    </div>
+                    <div class="tab_contents">
+                        <div class="detail_page" data-detail-contents="0">
+                            <p class="ptoho"><img src="" alt=""></p>
+                            <p class="ptoho_more"><img src="" alt=""></p>
+                            <button type="button">상품 정보 더보기 <img src="" alt=""></button>
+                        </div>
+                        <div class="recommendation" data-detail-contents="1">
+                            <h2 class="title">추천 상품</h2>
+                            <div class="swiper rec_swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide slide1">
+                                        <a href="#" class="rec_product_photo"><p class="photo"><img src="" alt=""></p></a>
+                                        <div class="info_like">
+                                            <a href="#" class="rec_product_info">
+                                                <div class="txt_box">
+                                                    <h2>뮤신 컴포트 데이 양배추 젤리</h2>
+                                                    <p class="price"><span class="discount">17%</span><em>35,900원</em><del>43,000원</del></p>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="like"><img src="./images/common/like.png" alt="찜하기"></a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide2">
+                                        <a href="#" class="rec_product_photo"><p class="photo"><img src="" alt=""></p></a>
+                                        <div class="info_like">
+                                            <a href="#" class="rec_product_info">
+                                                <div class="txt_box">
+                                                    <h2>뮤신 컴포트 데이 양배추 젤리</h2>
+                                                    <p class="price"><span class="discount">17%</span><em>35,900원</em><del>43,000원</del></p>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="like"><img src="./images/common/like.png" alt="찜하기"></a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide3">
+                                        <a href="#" class="rec_product_photo"><p class="photo"><img src="" alt=""></p></a>
+                                        <div class="info_like">
+                                            <a href="#" class="rec_product_info">
+                                                <div class="txt_box">
+                                                    <h2>뮤신 컴포트 데이 양배추 젤리</h2>
+                                                    <p class="price"><span class="discount">17%</span><em>35,900원</em><del>43,000원</del></p>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="like"><img src="./images/common/like.png" alt="찜하기"></a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide4">
+                                        <a href="#" class="rec_product_photo"><p class="photo"><img src="" alt=""></p></a>
+                                        <div class="info_like">
+                                            <a href="#" class="rec_product_info">
+                                                <div class="txt_box">
+                                                    <h2>뮤신 컴포트 데이 양배추 젤리</h2>
+                                                    <p class="price"><span class="discount">17%</span><em>35,900원</em><del>43,000원</del></p>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="like"><img src="./images/common/like.png" alt="찜하기"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review" data-detail-contents="3">
+                            <h2 class="title">리뷰 (46223)</h2>
+                            <div class="review_summary">
+                                <div class="rating">
+                                    <em>4.7</em>
+                                    <p class="rating_star"><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""></p>
+                                </div>
+                                <ul class="score_stats">
+                                    <li><p class="score">5점</p><div class="gauge"><div class="bar"></div></div><p class="percent">80%</p></li>
+                                    <li><p class="score">4점</p><div class="gauge"><div class="bar"></div></div><p class="percent">10%</p></li>
+                                    <li><p class="score">3점</p><div class="gauge"><div class="bar"></div></div><p class="percent">7%</p></li>
+                                    <li><p class="score">2점</p><div class="gauge"><div class="bar"></div></div><p class="percent">3%</p></li>
+                                    <li><p class="score">1점</p><div class="gauge"><div class="bar"></div></div><p class="percent">0%</p></li>
+                                </ul>
+                            </div>
+                            <div class="review_contents">
+                                <div class="sort_type">
+                                    <button type="button" id="sort_rating">별점순</button>
+                                    <button type="button" id="sort_latest">최신순</button>
+                                </div>
+                                <ul class="review_list">
+                                    <li>
+                                        <a href="#" class="review review1">
+                                            <img src="" alt="">
+                                            <div class="txt_box">
+                                                <p class="rating_star"><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""></p>
+                                                <p>이렇게 먹고 바로 효과본건 처음이에요!<br>너무 좋아서 이거 다 먹으면 바로 추가 주문하려고요~</p>
+                                                <div class="select_opt"><p>뮤신 글로우 3+1박스(40포)</p><p>자두맛</p></div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="review review2">
+                                            <img src="" alt="">
+                                            <div class="txt_box">
+                                                <p class="rating_star"><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""></p>
+                                                <p>이렇게 먹고 바로 효과본건 처음이에요!<br>너무 좋아서 이거 다 먹으면 바로 추가 주문하려고요~</p>
+                                                <div class="select_opt"><p>뮤신 글로우 3+1박스(40포)</p><p>자두맛</p></div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="policy">
+                            <h2>배송/교환/반품 안내</h2>
+                            <ul class="policy_list">
+                                <li class="policy_item policy_shipping">
+                                    <button type="button" id="policy_shipping_btn">배송 안내 <img src="" alt=""></button>
+                                    <div class="policy_contents">
+                                        <p>배송 관련 내용</p>
+                                        <p>배송 관련 내용</p>
+                                        <p>배송 관련 내용</p>
+                                    </div>
+                                </li>
+                                <li class="policy_item policy_exchange">
+                                    <button type="button" id="policy_exchange_btn">교환 안내 <img src="" alt=""></button>
+                                    <div class="policy_contents">
+                                        <p>교환 관련 내용</p>
+                                        <p>교환 관련 내용</p>
+                                        <p>교환 관련 내용</p>
+                                    </div>
+                                </li>
+                                <li class="policy_item policy_refund">
+                                    <button type="button" id="policy_refund_btn">환불 안내 <img src="" alt=""></button>
+                                    <div class="policy_contents">
+                                        <p>환불 관련 내용</p>
+                                        <p>환불 관련 내용</p>
+                                        <p>환불 관련 내용</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="product_right"><!-- 오른쪽 영역 (상품주요 정보, 옵션 선택, 구매 가격, 찜 버튼, CTA등) - 스크롤 시 따라다니도록 -->
+                    <div class="title_box">
+                        <h1>[뷰티페스타] 올더뮤 뮤신 딥글로우 ~58%</h1>
+                        <img src="" alt="공유하기">
+                    </div>
+                    <p class="price"><span class="discount">25%</span><em>56,900원</em><del>76,000원</del></p>
+                    <a href="#" class="review"><img src="./images/common/rating.png" alt=""><span class="rating">4.7</span><span class="review_count">리뷰 46223</span></a>
+                    <p class="delivery"><em>무료배송</em>16시 전에 구매 시 22일(금) 도착 보장</p>
+                    <div class="sold_out">
+                        <p class="sold_out_msg"><img src="" alt="">현재 품절된 옵션 : 키위맛</p>
+                        <button type="button" id="restock_alarm_btn"><img src="" alt=""> 재입고 알림</button>
+                    </div>
+                    <button type="button" id="card_benefits_btn">카드사 별 결제 혜택 <img src="" alt=""></button>
+                </div>
+                <div class="option_box">
+                    <select name="option_type" id="option_type">
+                        <option value="none">구성을 선택해주세요</option>
+                        <option value="box_1">뮤신 글로우 1박스(10포)</option>
+                        <option value="box_4">뮤신 글로우 3+1박스(40포)</option>
+                        <option value="box_6">뮤신 글로우 5+5+1박스(110포 v컷 1박 증정)</option>
+                    </select>
+                    <select name="option_flavor" id="option_flavor">
+                        <option value="none">맛을 선택해주세요</option>
+                        <option value="plum">자두맛</option>
+                        <option value="kiwi">키위맛</option>
+                    </select>
+                </div>
+                <div class="select_result"><!-- 위 옵션을 모두 선택하면 보여지는 선택 결과 창 -->
+                    <p class="select_type"><span><!-- 위 옵션에서 선택한 값이 대입될 자리 --></span></p>
+                    <p class="select_flavor"><span><!-- 위 옵션에서 선택한 값이 대입될 자리 --></span></p>
+                </div>
+                <div class="total_price"><p>주문금액</p><h2>0<span>원</span></h2></div>
+                <div class="cta_box">
+                    <a href="#" class="like_btn"><img src="" alt="찜하기"></a>
+                    <a href="#" class="cart_cta">장바구니</a>
+                    <a href="#" class="cart_cta">구매하기</a>
+                </div>
+            </div>
+        </main>
         <footer>
             <div class="f_left">
                 <h1 class="f_logo"><img src="./images/common/logo.png" alt="올더뮤"></h1>

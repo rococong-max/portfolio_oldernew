@@ -7,9 +7,9 @@
     #wrap main #best_review_wrap .review_title_btn,
     #wrap main #magazine_wrap h1,
     #wrap footer {padding:0 70px;}
-    /* 추천 영역 swiper 너비 */
-    #wrap main #recommendation_wrap .recommendation_right .active {/* width: 1050px; */}
+    /* 멤버십 배너 영역 */
 }
+
 @media screen and (max-width:1420px) {/* 너비가 1400px 이하일때 */
     /* 컨테이너 너비 조정 */
     #wrap .header_bg header, 
@@ -17,24 +17,150 @@
     #wrap main #best_review_wrap .review_title_btn,
     #wrap main #magazine_wrap h1,
     #wrap footer {padding:0 50px;}
+    /* 히어로 배너 영역 */
+    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt {left: 130px;}
+    /* 멤버십 배너 영역 */
+    #wrap main #membership_bnr_wrap .membership_bnr {padding: 100px 200px;}
 }
+
 @media screen and (max-width:1290px) {/* 너비가 1280px 이하일때 */
     /* 컨테이너 너비 조정 */
     #wrap .header_bg header, 
     #wrap main .container,
     #wrap main #best_review_wrap .review_title_btn,
     #wrap main #magazine_wrap h1,
-    #wrap footer {padding:0 30px;}
+    #wrap footer {padding:0 40px;}
     /* 검색 영역 가림 */
     #wrap .header_bg header .h_right #search_box {border: 0; margin-right: 18px;}
     #wrap .header_bg header .h_right #search_box #search_txt {display: none;}
-}
-@media screen and (max-width:1024px) {/* 너비가 1024px 이하일때 */
     /* 히어로 배너 영역 */
-    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a {padding: 0 60px;}
+    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt {left: 100px;}
     #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt .title {margin-bottom: 20px;}
     #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt .title > * {font-size: 1.88rem;}
     #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt .title p {margin-bottom: 12px;}
     #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt .title h1 {font-weight: 700;}
+    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt .title span {display: block;}
     #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt > .detail {font-size: 1.25rem; line-height: 1.5;}
+    /* 히어로배너 개별 slide */
+    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .slide1 a {background-image: url(../images/main/hero_bnr1_tablet.jpg);}
+    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .slide2 a {background-image: url(../images/main/hero_bnr2_tablet.jpg);}
+    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .slide3 a {background-image: url(../images/main/hero_bnr3_tablet.jpg);}
+    /* 컨텐츠 제목 텍스트 값 조정 */
+    #wrap main #best_wrap h1,
+    #wrap main #recommendation_wrap .recommendation_left h1,
+    #wrap main #recommendation_wrap .recommendation_left h1 span,
+    #wrap main #best_review_wrap .review_title_btn h1,
+    #wrap main #magazine_wrap h1 {font-size: 1.38rem;}
+    /* 멤버십 배너 영역 */
+    #wrap main #membership_bnr_wrap .membership_bnr {padding: 97px 100px;}
+}
+
+@media screen and (max-width:1040px) {/* 너비가 1024px 이하일때 */
+    /* 컨테이너 너비 조정 */
+    #wrap .header_bg header, 
+    #wrap main .container,
+    #wrap main #best_review_wrap .review_title_btn,
+    #wrap main #magazine_wrap h1,
+    #wrap footer {padding:0 30px;}
+    /* 히어로 배너 영역 */
+    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt {left: 60px;}
+    /* 베스트 영역 */
+    #wrap main #best_wrap {margin: 80px auto 160px;}
+    #wrap main #best_wrap h1 {margin-bottom: 30px;}
+    #wrap main #best_wrap .best_list .best_product .txt_box > a h2,
+    #wrap main #best_wrap .best_list .best_product .txt_box > a h2 span {font-size: 0.88rem; line-height: 1.3;}
+    #wrap main #best_wrap .best_list .best_product .txt_box > a h2 span {display: block;}
+    #wrap main #best_wrap .best_list .best_product .txt_box > a .price {margin: 9px 0;}
+    #wrap main #best_wrap .best_list .best_product .txt_box > a .price .discount {font-size: 1rem; font-weight: 600; color: #6B32D2;}
+    #wrap main #best_wrap .best_list .best_product .txt_box > a .price em {font-size: 1rem; font-weight: 600; margin: 4px;}
+    #wrap main #best_wrap .best_list .best_product .txt_box > a .price del {font-size: 0.75rem; font-weight: 400; color: #bbb;}
+    #wrap main #best_wrap .best_list .best_product .txt_box .review img {width: 14px;}
+    #wrap main #best_wrap .best_list .best_product .txt_box .review span {font-size: 0.75rem; transform: translateY(1px);}
+    #wrap main #best_wrap .best_list .best_product .txt_box .review .rating {margin:0 4px;}
+    /* 신제품 영역 */
+    #wrap main #new_wrap .new_title_tab {margin-bottom: 30px;}
+    #wrap main #new_wrap .new_title_tab h1 {font-size: 1.19rem; font-weight: 500;}
+    #wrap main #new_wrap .new_title_tab .tab a {font-size: 0.81rem; margin-right: 12px;}
+    #wrap main #new_wrap .new_product .new_txt_box > * {margin-bottom: 34px;}
+    #wrap main #new_wrap .new_product .new_txt_box h1 {font-size: 1.5rem; margin-bottom: 34px;}
+    #wrap main #new_wrap .new_product .new_txt_box .detail span {font-size: 0.88rem;}
+    #wrap main #new_wrap .new_product .new_txt_box .price del {font-size: 0.69rem;}
+    #wrap main #new_wrap .new_product .new_txt_box .price .discount {font-size: 1.06rem; margin: 3px;}
+    #wrap main #new_wrap .new_product .new_txt_box .price em {font-size: 1.06rem;}
+    #wrap main #new_wrap .new_product .new_txt_box .more .more_btn span {font-size: 0.88rem;}
+    /* 상품 추천 영역 */
+    #wrap main #recommendation_wrap .recommendation_left .tab a {font-size: 0.81rem;}
+    /* ------ 공통 텍스트 영역 */
+    #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box {}
+    #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box a {}
+    #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box a h2,
+    #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box a h2 span {font-size: 0.88rem; font-weight: 400;}
+    #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box a .price {margin: 9px 0;}
+    #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box a .price .discount {font-size: 1rem;}
+    #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box a .price em {font-size: 1rem;}
+    #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box a .price del {font-size: 0.75rem;}
+    #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box .review {display: flex; align-items: center;}
+    #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box .review > * {font-size: 0.75rem;}
+    #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box .review img {width: 14px;}
+    #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box .review span {transform: translateY(1px);}
+    #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box .review .rating {margin: 0 4px;}
+    /* 멤버십 배너 영역 */
+    #wrap main #membership_bnr_wrap .membership_bnr {padding: 97px 60px;}
+    #wrap main #membership_bnr_wrap .membership_bnr .member_txt_box p {font-size: 1.06rem;}
+    #wrap main #membership_bnr_wrap .membership_bnr .member_txt_box h1 {font-size: 1.38rem;}
+    #wrap main #membership_bnr_wrap .membership_bnr .member_txt_box h1+p {font-size: 0.88rem;}
+    /* 베스트 리뷰 영역 */
+    #wrap main #best_review_wrap .review_swiper_wrap .review_swiper .swiper-wrapper .swiper-slide .review_photo_box {height: 343px;}
+    #wrap main #best_review_wrap .review_swiper_wrap .review_swiper .swiper-wrapper .swiper-slide .review_photo_box .review_txt span {font-size: 0.81rem;}
+    #wrap main #best_review_wrap .review_swiper_wrap .review_swiper .swiper-wrapper .swiper-slide .review_product .product .p_txt h2 {font-weight: 400;font-size: 0.88rem;}
+    #wrap main #best_review_wrap .review_swiper_wrap .review_swiper .swiper-wrapper .swiper-slide .review_product .product .p_txt {margin-left: 16px;}
+    #wrap main #best_review_wrap .review_swiper_wrap .review_swiper .swiper-wrapper .swiper-slide .review_product .like {width: 20px; margin-right: 16px;}
+    #wrap main #best_review_wrap .more_btn span {font-size: 0.88rem;}
+    /* 매거진 영역 */
+    #wrap main #magazine_wrap .magazine_swiper .swiper-wrapper .swiper-slide a {height: 390px;}
+    #wrap main #magazine_wrap .magazine_swiper .swiper-wrapper .swiper-slide a dl {padding: 16px;}
+    #wrap main #magazine_wrap .magazine_swiper .swiper-wrapper .swiper-slide a dl dt,
+    #wrap main #magazine_wrap .magazine_swiper .swiper-wrapper .swiper-slide a dl dt span {font-size: 1rem;}
+    #wrap main #magazine_wrap .magazine_swiper .swiper-wrapper .swiper-slide a dl dd {font-size: 0.88rem;}
+    /* 브랜드 영역 */
+    #wrap main #brand_wrap .brand .brand_txt h1 {font-size: 1.38rem;}
+    #wrap main #brand_wrap .brand .brand_txt h1+p {margin: 20px 0;}
+    #wrap main #brand_wrap .brand .brand_txt p {font-size: 0.88rem;}
+    /* footer */
+}
+
+@media screen and (max-width:810px) {/* 너비가 810px 이하일때 */
+    /* header gnb가 감춰지고 햄버거 메뉴가 보임 */
+    #wrap .header_bg header .h_left #menu_btn {display: block;}/* 전체메뉴 펼치기(햄버거 메뉴) */
+    #wrap .header_bg header .h_left .gnb_pc {display: none;}
+    /* 신제품 영역 레이아웃 변경 */
+    #wrap main #new_wrap .new_product {flex-flow: column-reverse nowrap; justify-content: space-between; align-items: center;}
+    /* 상품 추천 영역  */
+    #wrap main #recommendation_wrap {flex-flow: column nowrap;}
+    #wrap main #recommendation_wrap .recommendation_left {margin-bottom: 20px;}
+    #wrap main #recommendation_wrap .recommendation_left h1 {margin-bottom: 14px;}
+    #wrap main #recommendation_wrap .recommendation_left h1 span {display: inline;}
+    #wrap main #recommendation_wrap .recommendation_left .tab {display: flex; gap: 10px;}
+    #wrap main #recommendation_wrap .recommendation_left .tab a {margin: 0;}
+    #wrap main #recommendation_wrap .recommendation_right {width: 100%;}
+}
+
+@media screen and (max-width:500px) {/* 너비가 400px 이하일때 */
+    /* 컨테이너 너비 조정 */
+    #wrap .header_bg header, 
+    #wrap main .container,
+    #wrap main #best_review_wrap .review_title_btn,
+    #wrap main #magazine_wrap h1,
+    #wrap footer {padding:0 15px;}
+    /* 베스트 영역 */
+    #wrap main #best_wrap .best_list {
+        display: grid; gap: 11px;
+        grid-template-areas:
+        'best1 best2'
+        'best3 best4';
+    }
+    #wrap main #best_wrap .best_list .best1 {grid-area: best1;}
+    #wrap main #best_wrap .best_list .best2 {grid-area: best2;}
+    #wrap main #best_wrap .best_list .best3 {grid-area: best3;}
+    #wrap main #best_wrap .best_list .best4 {grid-area: best4;}
 }
