@@ -1,17 +1,4 @@
 /* index.css */
-/* ================================================================= 띠배너 */
-#wrap #top_bnr {
-    background-color: #6B32D2;
-} /* bg */
-#wrap #top_bnr .top_bnr_swiper {height: 42px;}
-#wrap #top_bnr .top_bnr_swiper .swiper-wrapper {}
-#wrap #top_bnr .top_bnr_swiper .swiper-wrapper .swiper-slide {}
-#wrap #top_bnr .top_bnr_swiper .swiper-wrapper .swiper-slide a {
-    color: #fff; text-align: center; display: block; line-height: 42px; font-size: 0.75rem;
-}
-#wrap #top_bnr .top_bnr_swiper .swiper-wrapper .slide1 {}
-#wrap #top_bnr .top_bnr_swiper .swiper-wrapper .slide2 {}
-#wrap #top_bnr .top_bnr_swiper .swiper-wrapper .slide3 {}
 
 /* ===================================================================== main */
 #wrap main {}

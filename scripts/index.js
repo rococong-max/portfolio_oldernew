@@ -23,10 +23,17 @@ const modeProd = document.querySelector('#recommendation_wrap .mode_swiper');
 const recProd = document.querySelectorAll('#recommendation_wrap .swiper');
 const recTab = document.querySelectorAll('#recommendation_wrap .tab a');
 const reviewList = document.querySelector('.review_swiper_wrap .review_swiper');
-const magazineList = document.querySelector('#magazine_wrap .magazine_swiper')
+const magazineList = document.querySelector('#magazine_wrap .magazine_swiper');
+const sideMenuBtn = document.querySelector('#menu_btn'); // 햄버거 메뉴
+const sideMenu = document.querySelector('#side_menu_wrap'); // 사이드 메뉴
+const pcGnb = document.querySelectorAll('.gnb_pc a'); // 데크스톱 gnb > a
+const mobileGnb = document.querySelector('.side_menu .gnb_mobile') // 모바일 gnb
+const sideBg = document.querySelector('.overlay') // 햄버거 메뉴 열렸을때 뒤 어둡게하는 영역
+const menuCloseBtn = sideMenu.querySelector('#close_btn')
+
 
 console.log(topBnr,topBtn,newProd,clearTab,comfortTab,clearContainer,comfortContainer,onceDayProd);
-console.log(/* onceDayTab,vLineTab,modeTab */recTab);
+console.log(recTab,pcGnb,sideMenuBtn,sideBg,mobileGnb,sideMenu);
 
 // FAB
 // 화면이 일정 길이 만큼 스크롤 되면 top_btn에 .show 클래스명 주기
@@ -138,10 +145,6 @@ function tabClickFunc(e){
     // 클릭된 탭과 컨텐츠에 active속성 주기
     recTab[targetI].classList.add('active');
     recProd[targetI].classList.add('active');
-    // 조금 기다렸다가 실행 (setTimeout)
-    setTimeout(function(){
-        recSwipers[targetI].update();
-    }, 50);
 }
 // 위 함수가 탭이 클릭했을 때 실행
 recTab[0].addEventListener('click', tabClickFunc);
@@ -181,4 +184,34 @@ const magazineSwiper = new Swiper(magazineList, {
         1200:{slidesPerView: 4,},
         1600:{slidesPerView: 5,},
     },
+})
+
+
+// 햄버거 메뉴 클릭  -> 사이드 메뉴 열림 (사이드메뉴 안 gnb는 .gnb_pc와 동일 - cloneNode 활용)
+// 햄버거 메뉴를 클릭했을 때 side_menu_wrap와 overlay 보임
+sideMenuBtn.addEventListener('click',function(){
+    sideMenu.style.display = "block"; 
+    sideBg.style.display = "block"; 
+    // console.log('사이드메뉴 열림')
+})
+// 데스크 톱 안 gnb > a를 복제해서 gnb_mobile로 이동
+for(let gnbA of pcGnb){
+    // console.log(gnbA);
+    const gnbClone = gnbA.cloneNode(true);
+    //console.log(gnbClone);
+    mobileGnb.appendChild(gnbClone);
+}
+
+// mobileGnb.appendChild(gnbClone); // 자식에 붙여넣기
+
+// 사이드메뉴 안 닫기버튼 또는 어둡게 처리된 바깥 영역 클릭 시 사이드 메뉴 닫힘 
+sideBg.addEventListener('click',function(){
+    sideMenu.style.display = "none";
+    sideBg.style.display = "none"; 
+    // console.log('사이드메뉴 닫힘')
+})
+menuCloseBtn.addEventListener('click',function(){
+    sideMenu.style.display = "none";
+    sideBg.style.display = "none"; 
+    // console.log('사이드메뉴 닫힘')
 })

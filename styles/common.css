@@ -12,9 +12,23 @@
 }
 /* ========================================== 스크롤 시 화면이 부드럽게 올라감 */
 html {scroll-behavior: smooth;}
+/* ================================================================= 띠배너 */
+#wrap #top_bnr {
+    background-color: #6B32D2;
+    position: relative; z-index: 999;
+} /* bg */
+#wrap #top_bnr .top_bnr_swiper {height: 42px;}
+#wrap #top_bnr .top_bnr_swiper .swiper-wrapper {}
+#wrap #top_bnr .top_bnr_swiper .swiper-wrapper .swiper-slide {}
+#wrap #top_bnr .top_bnr_swiper .swiper-wrapper .swiper-slide a {
+    color: #fff; text-align: center; display: block; line-height: 42px; font-size: 0.75rem;
+}
+#wrap #top_bnr .top_bnr_swiper .swiper-wrapper .slide1 {}
+#wrap #top_bnr .top_bnr_swiper .swiper-wrapper .slide2 {}
+#wrap #top_bnr .top_bnr_swiper .swiper-wrapper .slide3 {}
 /* ===================================================== header */
-#wrap {min-width: 380px;}
-#wrap .header_bg {position: sticky; top: 0; z-index: 999; background: #fff; }
+#wrap {min-width: 350px; position: relative;}
+#wrap .header_bg {position: sticky; top: 0; z-index: 888; background: #fff; }
 #wrap .header_bg header {
     display: flex; align-items: center; justify-content: space-between; height: 70px;
     max-width: 1440px; margin: 0 auto;
@@ -44,19 +58,43 @@ html {scroll-behavior: smooth;}
 #wrap .header_bg header .h_right .user_box .user img {width: 100%;}
 #wrap .header_bg header .h_right .user_box .cart {display: inline-block; width: 24px;}
 #wrap .header_bg header .h_right .user_box .cart img {width: 100%;}
-/* 햄버거메뉴 클릭하면 보이는 영역 */
-#wrap #side_menu {display: none;} 
-#wrap #side_menu .menu_top {}
-#wrap #side_menu .menu_top .log_in {}
-#wrap #side_menu .menu_top .log_in a {}
-#wrap #side_menu .menu_top .log_in a img {}
-#wrap #side_menu .menu_top .log_in p {}
-#wrap #side_menu .menu_top #close_btn {}
-#wrap #side_menu .menu_top #close_btn img {}
-#wrap #side_menu .gnb_mobile {} /* mobile(js로 복붙) */
-#wrap #side_menu .lnb {}
-#wrap #side_menu .lnb a {}
-#wrap .overlay {} /* 모바일 환경에서 메뉴를 열었을때 뒷 배경이 어둡게 보이도록 함(클릭하면 메뉴 닫힘) */
+/* --------------------------------------------  햄버거메뉴 클릭하면 보이는 영역 */
+#wrap #side_menu_wrap {
+    display: none; position: absolute; top:42px; left: 0; min-width: 280px;
+    height: 100vh; width: 70vw; z-index: 999; background: #fff;
+} 
+#wrap #side_menu_wrap .side_menu {
+    width: 90%; margin: 0 auto; padding: 30px 0;
+}
+#wrap #side_menu_wrap .side_menu .menu_top {
+    display: flex; justify-content: space-between; align-items: center;
+    padding-bottom: 20px;
+} 
+#wrap #side_menu_wrap .side_menu .menu_top .login {}
+#wrap #side_menu_wrap .side_menu .menu_top .login a {font-weight: 500; display:block; margin-bottom:8px;}
+#wrap #side_menu_wrap .side_menu .menu_top .login a img {width: 14px;}
+#wrap #side_menu_wrap .side_menu .menu_top .login p {color: #666; font-size: 0.69rem;;}
+#wrap #side_menu_wrap .side_menu .menu_top #close_btn {}
+#wrap #side_menu_wrap .side_menu .menu_top #close_btn img {}
+#wrap #side_menu_wrap .side_menu .gnb_mobile {
+    padding: 30px 0;
+    border-top: 0.5px solid #bbb;
+    border-bottom: 0.5px solid #bbb;
+}
+#wrap #side_menu_wrap .side_menu .gnb_mobile > a {
+    display: block; margin-bottom: 26px;
+}
+#wrap #side_menu_wrap .side_menu .gnb_mobile > a:last-child {margin: 0;}
+#wrap #side_menu_wrap .side_menu .lnb {padding: 30px 0;} 
+#wrap #side_menu_wrap .side_menu .lnb a {
+    font-size: 0.88rem; color: #888; display: block;
+    margin-bottom: 18px;
+}
+#wrap .overlay {
+    display: none;
+    position: absolute; top: 0; left: 0; z-index: 888; background: rgba(0, 0, 0, 0.6);
+    width: 100%; height: 100%;
+} /* 모바일 환경에서 메뉴를 열었을때 뒷 배경이 어둡게 보이도록 함(클릭하면 메뉴 닫힘) */
 
 /* ================================================================================= footer */
 #wrap footer {
