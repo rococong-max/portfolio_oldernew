@@ -193,6 +193,7 @@ sideMenuBtn.addEventListener('click',function(){
     sideMenu.style.display = "block"; 
     sideBg.style.display = "block"; 
     // console.log('사이드메뉴 열림')
+    document.body.style.overflow = "hidden";
 })
 // 데스크 톱 안 gnb > a를 복제해서 gnb_mobile로 이동
 for(let gnbA of pcGnb){
@@ -202,16 +203,16 @@ for(let gnbA of pcGnb){
     mobileGnb.appendChild(gnbClone);
 }
 
-// mobileGnb.appendChild(gnbClone); // 자식에 붙여넣기
-
 // 사이드메뉴 안 닫기버튼 또는 어둡게 처리된 바깥 영역 클릭 시 사이드 메뉴 닫힘 
 sideBg.addEventListener('click',function(){
     sideMenu.style.display = "none";
     sideBg.style.display = "none"; 
     // console.log('사이드메뉴 닫힘')
+    document.body.style.overflow = "auto";
 })
 menuCloseBtn.addEventListener('click',function(){
     sideMenu.style.display = "none";
     sideBg.style.display = "none"; 
     // console.log('사이드메뉴 닫힘')
+    document.body.style.overflow = "auto";
 })
