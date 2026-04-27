@@ -28,7 +28,7 @@ body{/* overflow: hidden; */}
 #wrap #top_bnr .top_bnr_swiper .swiper-wrapper .slide1 {}
 #wrap #top_bnr .top_bnr_swiper .swiper-wrapper .slide2 {}
 #wrap #top_bnr .top_bnr_swiper .swiper-wrapper .slide3 {}
-/* ===================================================== header */
+/* ============================================================================ header */
 #wrap {min-width: 350px; position: relative;}
 #wrap .header_bg {position: sticky; top: 0; z-index: 888; background: #fff; }
 #wrap .header_bg header {
@@ -42,7 +42,8 @@ body{/* overflow: hidden; */}
 #wrap .header_bg header .h_left h1 a {display: block; width: 145px;}
 #wrap .header_bg header .h_left h1 a img {width: 100%;}
 #wrap .header_bg header .h_left .gnb_pc {}
-#wrap .header_bg header .h_left .gnb_pc a {margin-right: 24px;}
+#wrap .header_bg header .h_left .gnb_pc a:hover {color: #6B32D2; font-weight: 500;}
+#wrap .header_bg header .h_left .gnb_pc a {margin-right: 24px; transition: 0.2s; /* height: 100%; display: inline-block; */}
 #wrap .header_bg header .h_left .gnb_pc a:last-child {margin: 0;}
 #wrap .header_bg header .h_right {display: flex; align-items: center;}
 #wrap .header_bg header .h_right #search_box {
