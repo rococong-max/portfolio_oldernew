@@ -62,7 +62,7 @@ const topBnrSwiper = new Swiper(topBnr,{
 // 히어로배너 swiper
 const heroBnrSwiper = new Swiper(heroBnr,{
     loop:true,
-    //autoplay:{delay:3000,},
+    autoplay:{delay:3000,},
     disableOnInteraction: false,
     speed:800,
     pagination:{
@@ -123,7 +123,7 @@ const recSwiperCommon = {
     observeParents: true,
     breakpoints:{
         600:{slidesPerView:3,spaceBetween:20,},
-        1024:{spaceBetween:28,},
+        1024:{slidesPerView:3, spaceBetween:28,},
     },
 }
 const onceDaySwiper = new Swiper(onceDayProd,recSwiperCommon)

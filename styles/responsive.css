@@ -10,7 +10,6 @@
     /* 히어로배너 개별 slide */
     #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .slide1 a {background-image: url(../images/main/hero_bnr1_L.jpg);}
     #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .slide2 a {background-image: url(../images/main/hero_bnr2_L.jpg);}
-    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .slide3 a {background-image: url(../images/main/hero_bnr3_L.jpg);}
     /* 멤버십 배너 영역 */
 }
 
@@ -55,7 +54,7 @@
     #wrap main #membership_bnr_wrap .membership_bnr {padding: 97px 100px;}
 }
 
-@media screen and (max-width:1040px) {/* 너비가 1024px 이하일때 */
+@media screen and (max-width:1040px) {/* 너비가 1040px 이하일때 */
     /* 컨테이너 너비 조정 */
     #wrap .header_bg header, 
     #wrap main .container,
@@ -77,6 +76,9 @@
     #wrap main #best_wrap .best_list .best_product .txt_box .review img {width: 14px;}
     #wrap main #best_wrap .best_list .best_product .txt_box .review span {font-size: 0.75rem; transform: translateY(1px);}
     #wrap main #best_wrap .best_list .best_product .txt_box .review .rating {margin:0 4px;}
+    /* ------------------- 이미지 호버 시에  보이는 아이콘 */
+    #wrap main #best_wrap .best_list .best_product .photo_box .like_cart a.like {margin-right: 12px;}
+    #wrap main #best_wrap .best_list .best_product .photo_box .like_cart a img {width: 20px;} 
     /* 신제품 영역 */
     #wrap main #new_wrap .new_title_tab {margin-bottom: 30px;}
     #wrap main #new_wrap .new_title_tab h1 {font-size: 1.19rem; font-weight: 500;}
@@ -101,6 +103,9 @@
     #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box .review img {width: 14px;}
     #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box .review span {transform: translateY(1px);}
     #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .txt_box .review .rating {margin: 0 4px;}
+    /* ------------------- 이미지 호버 시에  보이는 아이콘 */
+    #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .photo_box .like_cart a.like {margin-right: 12px;}
+    #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .photo_box .like_cart a img {width: 20px;} 
     /* 멤버십 배너 영역 */
     #wrap main #membership_bnr_wrap .membership_bnr {padding: 97px 60px;}
     #wrap main #membership_bnr_wrap .membership_bnr .member_txt_box p {font-size: 1.06rem;}
@@ -127,6 +132,13 @@
     /* header gnb가 감춰지고 햄버거 메뉴가 보임 */
     #wrap .header_bg header .h_left #menu_btn {display: block;}/* 전체메뉴 펼치기(햄버거 메뉴) */
     #wrap .header_bg header .h_left .gnb_pc {display: none;}
+    /* 히어로 배너 */
+    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a {background-position: center;}
+    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt {left: 40px; top: 30%;}
+    /* 히어로배너 개별 slide */
+    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .slide1 a {background-image: url(../images/main/hero_bnr1_m.jpg);}
+    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .slide2 a {background-image: url(../images/main/hero_bnr2_m.jpg);}
+
     /* 베스트 영역 */
     #wrap main #best_wrap .best_list {
         display: grid; gap: 20px;
@@ -159,7 +171,6 @@
 @media screen and (max-width:660px) {/* 너비가 660px 이하일때 */
     /* fab 숨김 처리 */
     #wrap main #fab_wrap {display: none;}
-    /* 히어로배너의 경우  */
     /* 히어로 배너 영역 */
     #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a {background-position: center;}
     #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt {left: 40px; top: 30%;}
@@ -169,10 +180,13 @@
     #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt .title h1 {font-weight: 600;}
     #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt .title span {display: block;}
     #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .swiper-slide a .bnr_txt > .detail {font-size: 1.25rem; line-height: 1.5;}
-    /* 히어로배너 개별 slide */
-    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .slide1 a {background-image: url(../images/main/hero_bnr1_m.jpg);}
-    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .slide2 a {background-image: url(../images/main/hero_bnr2_m.jpg);}
-    #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .slide3 a {background-image: url(../images/main/hero_bnr3_m.jpg);}
+
+    /* 상품 추천 영역 */
+    /* ------------------- 이미지 호버 시에  보이는 아이콘 */
+    #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .photo_box .like_cart a {padding: 8px;}
+    #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .photo_box .like_cart a.like {margin-right: 4px;}
+    #wrap main #recommendation_wrap .recommendation_right .swiper .swiper-wrapper .swiper-slide .photo_box .like_cart a img {width: 18px;} 
+
 
     /* footer 영역 */
     #wrap footer {display: block; }
@@ -197,6 +211,11 @@
     #wrap main #recommendation_wrap .recommendation_left h1 span,
     #wrap main #best_review_wrap .review_title_btn h1,
     #wrap main #magazine_wrap h1 {font-size: 1.13rem; font-weight: 600;}
+    /* 베스트 영역 */
+    /* ------------------- 이미지 호버 시에  보이는 아이콘 */
+    #wrap main #best_wrap .best_list .best_product .photo_box .like_cart a {padding: 8px;}
+    #wrap main #best_wrap .best_list .best_product .photo_box .like_cart a.like {margin-right: 4px;}
+    #wrap main #best_wrap .best_list .best_product .photo_box .like_cart a img {width: 18px;} 
     /* 신제품 영역 */
     #wrap main #new_wrap .new_title_tab {flex-flow: column nowrap; gap: 20px;}
     #wrap main #new_wrap .new_title_tab h1 {font-size: 1rem;}
@@ -230,6 +249,9 @@
     #wrap main #membership_bnr_wrap .membership_bnr .member_txt_box p {font-size: 0.75rem;}
     #wrap main #membership_bnr_wrap .membership_bnr .member_txt_box h1 {font-size: 0.88rem; margin: 8px 0;}
     #wrap main #membership_bnr_wrap .membership_bnr .member_txt_box h1+p {font-size: 0.69rem;}
+    
+    /* 매거진 영역 */
+    #wrap main #magazine_wrap .magazine_swiper .swiper-wrapper .swiper-slide a {height: 390px;}
     
     /* 브랜드 영역 */
     #wrap main #brand_wrap .brand .brand_txt h1 {font-size: 1.13rem;}

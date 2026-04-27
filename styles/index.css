@@ -42,7 +42,6 @@
 /* --------------------------- 개별 slide */
 #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .slide1 a {background-image: url(../images/main/hero_bnr1.jpg);}
 #wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .slide2 a {background-image: url(../images/main/hero_bnr2.jpg);}
-#wrap main #hero_bnr_wrap .hero_bnr_swiper .swiper-wrapper .slide3 a {background-image: url(../images/main/hero_bnr3.jpg);}
 /* --------------------------- swiper-pagination */
 #wrap main #hero_bnr_wrap .hero_bnr_swiper .bar {
     width: 80%; height: 3px; top: auto;
