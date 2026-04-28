@@ -35,15 +35,17 @@ body{/* overflow: hidden; */}
     display: flex; align-items: center; justify-content: space-between; height: 70px;
     max-width: 1440px; margin: 0 auto;
 }
-#wrap .header_bg header .h_left {display: flex; align-items: center;}
+#wrap .header_bg header .h_left {display: flex; align-items: center; height: 100%;}
 #wrap .header_bg header .h_left #menu_btn {width: 24px; margin-right: 12px; display: none;}/* 전체메뉴 펼치기(햄버거 메뉴) */
 #wrap .header_bg header .h_left #menu_btn img {width: 100%;}
 #wrap .header_bg header .h_left h1 { margin-right: 34px;}
 #wrap .header_bg header .h_left h1 a {display: block; width: 145px;}
 #wrap .header_bg header .h_left h1 a img {width: 100%;}
-#wrap .header_bg header .h_left .gnb_pc {}
+#wrap .header_bg header .h_left .gnb_pc {height: 100%;}
 #wrap .header_bg header .h_left .gnb_pc a:hover {color: #6B32D2; font-weight: 500;}
-#wrap .header_bg header .h_left .gnb_pc a {margin-right: 24px; transition: 0.2s; /* height: 100%; display: inline-block; */}
+#wrap .header_bg header .h_left .gnb_pc a {
+    margin-right: 24px; transition: 0.2s; height: 100%; line-height: 70px;
+}
 #wrap .header_bg header .h_left .gnb_pc a:last-child {margin: 0;}
 #wrap .header_bg header .h_right {display: flex; align-items: center;}
 #wrap .header_bg header .h_right #search_box {
